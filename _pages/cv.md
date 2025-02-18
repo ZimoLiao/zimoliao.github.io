@@ -9,6 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
+<p></p>
 Education
 ---
 * B.S. in Aerospace Engineering, Nanjing University of Aeronautics and Astronautics, 2021
