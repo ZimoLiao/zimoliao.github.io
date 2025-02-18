@@ -11,49 +11,27 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* B.S. in Aerospace Engineering, Nanjing University of Aeronautics and Astronautics, 2021
+* Ph.D in Fluid Mechanics, University of Science and Technology of China, 2026 (expected)
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming: C/C++, Fortran, CUDA C/Fortran, MPI, MATLAB, Python
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+1. **Liao, Z.-M.**, Lin, F.-H., Liu, L.-Q., Liu, N.-S., & Lu, X.-Y. 2025 Turbulence modulation in particle-laden channel flow: the particle inertial effects. *J. Fluid Mech.* (Under Review)
+2. Chen, L.-B., Gao, A.-K., **Liao, Z.-M.**, Wan, Z.-H., & Liu, N.-S. 2024 Temperature and heat flux bounds of convection driven by non-uniform internal heating. *Acta Mech. Sin.* 40 (8), 323630.
+3. **Liao, Z.-M.**, Chen, L.-B., Wan, Z.-H., Liu, N.-S., & Lu, X.-Y. 2024 GPU acceleration of four-way coupled PP-DNS for compressible particle-laden wall turbulence. *Int. J. Multiph. Flow.* 176, 104840.
+4. Yuan, T.-F., Zhang, P.-J.-Y., **Liao, Z.-M.**, Wang Z.-H., Liu, N.-S., & Lu, X.-Y. 2024 Effects of inflow Mach numbers on shock train dynamics and turbulence features in a backpressured supersonic channel flow. *Phys. Fluids.* 36 (2), 026126.
+5. **Liao, Z.-M.**, Zhao, Z., Chen, L.-B., Wan, Z.-H., Liu, N.-S. & Lu, X.-Y. 2023 Reduced-order variational mode decomposition to reveal transient and non-stationary dynamics in fluid flows. *J. Fluid Mech.* 966, A7.
   
-Talks
+<!-- Talks
 ======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
+1.  -->
   
-Teaching
+Awards
 ======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* National Scholarship, Ministry of Education of China, 2020 & 2024
+* National Xu Zhilun Outstanding Students Award, The Chinese Society of Theoretical and Applied Mechanics, 2020
+* Grand Prize (1st place) of the 12th National Zhou Peiyuan Competition on Mechanics, The Chinese Society of Theoretical and Applied Mechanics, 2019
