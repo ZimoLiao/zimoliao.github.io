@@ -9,8 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-===
-
 Education
 ---
 * Ph.D in Fluid Mechanics, University of Science and Technology of China, 2026 (expected)
