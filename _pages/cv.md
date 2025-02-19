@@ -9,11 +9,12 @@ redirect_from:
 
 {% include base_path %}
 
-<p></p>
+===
+
 Education
 ---
-* B.S. in Aerospace Engineering, Nanjing University of Aeronautics and Astronautics, 2021
 * Ph.D in Fluid Mechanics, University of Science and Technology of China, 2026 (expected)
+* B.Eng. in Aerospace Engineering, Nanjing University of Aeronautics and Astronautics, 2021
   
 Skills
 ---
