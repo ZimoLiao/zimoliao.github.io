@@ -11,8 +11,8 @@ redirect_from:
 
 Education
 ---
-* Ph.D in Fluid Mechanics, University of Science and Technology of China (USTC), 2021 - 2026 (expected)
-* B.Eng. in Aerospace Engineering, Nanjing University of Aeronautics and Astronautics (NUAA), 2017 - 2021
+* Ph.D in Fluid Mechanics, University of Science and Technology of China, 2021 - 2026 (expected)
+* B.Eng. in Aerospace Engineering, Nanjing University of Aeronautics and Astronautics, 2017 - 2021
 
 Publications
 ---
