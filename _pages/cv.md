@@ -11,12 +11,8 @@ redirect_from:
 
 Education
 ---
-* Ph.D in Fluid Mechanics, University of Science and Technology of China, 2026 (expected)
-* B.Eng. in Aerospace Engineering, Nanjing University of Aeronautics and Astronautics, 2021
-  
-Skills
----
-* Programming: C/C++, Fortran, CUDA C/Fortran, MPI, MATLAB, Python
+* Ph.D in Fluid Mechanics, University of Science and Technology of China (USTC), 2021 - 2026 (expected)
+* B.Eng. in Aerospace Engineering, Nanjing University of Aeronautics and Astronautics (NUAA), 2017 - 2021
 
 Publications
 ---
@@ -29,9 +25,19 @@ Publications
 <!-- Talks
 ---
 1.  -->
-  
+
 Awards
+---
+* **National Scholarship**, Ministry of Education of China, 2020 & 2024  
+* **National Xu Zhilun Outstanding Students Award**, CSTAM, 2020  
+* **Zhou Peiyuan Mechanics Competition** <p class="text-highlight">(Grand Prize, 1st place)</p>, CSTAM, 2019
+
+<!-- Awards
 ---
 * National Scholarship, Ministry of Education of China, 2020 & 2024
 * National Xu Zhilun Outstanding Students Award, The Chinese Society of Theoretical and Applied Mechanics, 2020
-* Grand Prize (1st place) of the 12th National Zhou Peiyuan Competition on Mechanics, The Chinese Society of Theoretical and Applied Mechanics, 2019
+* Grand Prize (1st place) of the 12th National Zhou Peiyuan Competition on Mechanics, The Chinese Society of Theoretical and Applied Mechanics, 2019 -->
+  
+Skills
+---
+* Programming: C/C++, Fortran, CUDA C/Fortran, MPI, MATLAB, Python
