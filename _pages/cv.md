@@ -30,13 +30,7 @@ Awards
 ---
 * **National Scholarship**, Ministry of Education of China, 2020 & 2024  
 * **National Xu Zhilun Outstanding Students Award**, CSTAM, 2020  
-* **Zhou Peiyuan Mechanics Competition** <p class="text-highlight">(Grand Prize, 1st place)</p>, CSTAM, 2019
-
-<!-- Awards
----
-* National Scholarship, Ministry of Education of China, 2020 & 2024
-* National Xu Zhilun Outstanding Students Award, The Chinese Society of Theoretical and Applied Mechanics, 2020
-* Grand Prize (1st place) of the 12th National Zhou Peiyuan Competition on Mechanics, The Chinese Society of Theoretical and Applied Mechanics, 2019 -->
+* **National Zhou Peiyuan Mechanics Competition (Grand Prize, 1st place)**, CSTAM, 2019
   
 Skills
 ---

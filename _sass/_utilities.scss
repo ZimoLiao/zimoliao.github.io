@@ -474,18 +474,3 @@ a.reversefootnote {
   color: $danger-color;
   font-weight: bold;
 }
-
-/*
-   Highlights
-   ========================================================================== */
-
-.text-highlight {
-  color: $flickr-color !important;
-  font-weight: bold;
-}
-
-.bg-highlight {
-  background-color: mix($flickr-color, #fff, 15%);
-  padding: 0.1em 0.3em;
-  border-radius: 3px;
-}
