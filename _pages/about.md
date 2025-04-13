@@ -14,7 +14,7 @@ redirect_from:
 I am a Ph.D. candidate in the Department of Modern Mechanics at the University of Science and Technology of China (USTC). I have a broad interest in fluid dynamics (especially turbulence), its applications in geophysics and astrophysics, and related interdisciplinary approaches.
 
 My recent research projects focus on particle-laden turbulence in wall-bounded geometries - a challenging regime where turbulent dynamics intertwine with multiphase interactions across a vast parameter space.
-Currently, I am trying to figure out the mechanisms underlying particle-induced turbulence modulation via an integration of the turbulence statistical theory (continuous phase) and kinetic theory (dispersed particulate phase), seeking a harmonious physical picture of this complex system.
+I am trying to figure out the mechanisms underlying particle-induced turbulence modulation via an integration of the turbulence statistical theory (continuous phase) and kinetic theory (dispersed particulate phase), seeking a harmonious physical picture of this complex system.
 
 About Turbulence
 ======
