@@ -8,8 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-> Nothing happens in vain, but everything from reason and by necessity.  
-> by Leucippus (c. 460 BC)
+> ``Nothing happens in vain, but everything from reason and by necessity." 
+> by Leucippus (460 BCE)
+
+> ``Look only, and solely, at what are the facts."
+> by Bertrand Russell (1959)
 
 I am a Ph.D. candidate in the Department of Modern Mechanics at the University of Science and Technology of China (USTC). I have a broad interest in fluid dynamics (especially turbulence), its applications in geophysics and astrophysics, and related interdisciplinary approaches.
 
