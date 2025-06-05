@@ -60,7 +60,7 @@
   ],
   "certificates": [
   ],
-  "publications": [ // TODO: need to be updated
+  "publications": [
 	{
 	  "name": "Liao, Z.-M., Lin, F.-H., Liu, L.-Q., Liu, N.-S., & Lu, X.-Y. 2025 Non-monotonic effect of Stokes number on turbulence modulation in particle-laden channel flow. J. Fluid Mech. (Accepted)",
 	  "publisher": "J. Fluid Mech.",
