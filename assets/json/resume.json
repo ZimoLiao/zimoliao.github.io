@@ -5,15 +5,9 @@
     "image": "",
     "email": "zimoliao@mail.ustc.edu.cn",
     "phone": "",
-    "url": "https://zimoliao.github.io/",
+    "url": "",
     "summary": "A PhD candidate in Fluid Mechanics at USTC, investigating turbulent flows through numerical simulations and theoretical analysis.",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
+    "location": {},
     "profiles": [
     ]
   },
