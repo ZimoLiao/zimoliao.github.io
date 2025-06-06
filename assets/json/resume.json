@@ -39,7 +39,7 @@
 	  "startDate": "2017-09-01",
 	  "endDate": "2021-06-30",
 	  "summary": "B.Eng. in Aerospace Engineering, 2017 - 2021"
-    },
+	}
   ],
 "awards": [
 	{
@@ -136,9 +136,8 @@
       "icon": "fa-solid fa-tag",
       "keywords": [
         "Turbulence",
-		"Fluid Mechanics",
 		"Geophysical Fluid Dynamics",
-		"Computational Fluid Dynamics",
+		"Computational Fluid Dynamics"
       ]
     }
   ],
