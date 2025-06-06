@@ -44,7 +44,7 @@
 "awards": [
 	{
 		"title": "National Scholarship",
-		"date": "2020 & 2024",
+		"date": "2020, 2024",
 		"awarder": "Ministry of Education of China"
 	},
 	{
@@ -53,9 +53,10 @@
 		"awarder": "Chinese Society of Theoretical and Applied Mechanics"
 	},
 	{
-		"title": "National Zhou Peiyuan Mechanics Competition (Grand Prize, 1st place)",
+		"title": "National Zhou Peiyuan Mechanics Competition",
 		"date": "2019",
-		"awarder": "Chinese Society of Theoretical and Applied Mechanics"
+		"awarder": "Chinese Society of Theoretical and Applied Mechanics",
+		"summary": "Grand Prize, 1st place"
 	}
   ],
   "certificates": [
