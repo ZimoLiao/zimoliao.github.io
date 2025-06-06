@@ -39,7 +39,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -418,8 +418,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-",
-          title: '',
+            },},{id: "news-our-article-on-particle-laden-turbulence-was-accepted-by-journal-of-fluid-mechanics",
+          title: '🎉 Our article on particle-laden turbulence was accepted by Journal of Fluid Mechanics!...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
@@ -492,7 +492,7 @@ ninja.data = [{
         title: 'ResearchGate',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.researchgate.net/profile/https://www.researchgate.net/profile/Zimo_Liao/", "_blank");
+          window.open("https://www.researchgate.net/profile/Zimo Liao/", "_blank");
         },
       },{
         id: 'social-scholar',
