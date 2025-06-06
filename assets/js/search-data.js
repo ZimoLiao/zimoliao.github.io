@@ -376,7 +376,10 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-our-article-on-particle-laden-turbulence-was-accepted-by-journal-of-fluid-mechanics",
+            },},{id: "news-our-jfm-article-vol-966-a7-2023-has-been-cited-in-nature-reviews-methods-primers-vol-5-article-21-2025-a-recognition-from-the-broader-scientific-community",
+          title: '🎉 Our JFM article (Vol. 966, A7, 2023) has been cited in Nature...',
+          description: "",
+          section: "News",},{id: "news-our-article-on-particle-laden-turbulence-was-accepted-by-journal-of-fluid-mechanics",
           title: '🎉 Our article on particle-laden turbulence was accepted by Journal of Fluid Mechanics!...',
           description: "",
           section: "News",},{
