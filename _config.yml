@@ -185,6 +185,7 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - _projects/*.md # exclude all project markdown files from the build
 keep_files:
   - CNAME
   - .nojekyll
