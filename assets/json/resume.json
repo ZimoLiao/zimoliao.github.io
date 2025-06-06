@@ -63,11 +63,11 @@
   ],
   "publications": [
 	{
-	  "name": "Non-monotonic effect of Stokes number on turbulence modulation in particle-laden channel flow. J. Fluid Mech",
+	  "name": "Non-monotonic effect of Stokes number on turbulence modulation in particle-laden channel flow",
 	  "publisher": "Journal of Fluid Mechanics",
 	  "releaseDate": "2025",
 	  "url": "",
-	  "summary": "Four-way coupled PP-DNS reveals that increasing particle inertia shifts the flow from drag enhancement to reduction before asymptotically recovering the single-phase state. In the statistical sense, competition between particle-induced extra transport and extra dissipation at various aspects is identified as the drivers of turbulence modulation, leveraging a comprehensive two-phase statistical description derived in this work. The particle inertial effects are elucidated by examining the limit behaviors (St to 0 or ∞) analytically."
+	  "summary": "Four-way coupled PP-DNS shows that increasing particle inertia first enhances, then reduces drag, before returning to the single-phase state. Turbulence modulation is driven by the competition between particle-induced transport and dissipation, as revealed by a comprehensive two-phase statistical analysis. Analytical examination of limiting Stokes numbers (0 or ∞) clarifies particle inertia effects."
 	},
 	{
 	  "name": "GPU acceleration of four-way coupled PP-DNS for compressible particle-laden wall turbulence",
@@ -81,7 +81,7 @@
 	  "publisher": "Journal of Fluid Mechanics",
 	  "releaseDate": "2023-06-28",
 	  "url": "https://doi.org/10.1017/jfm.2023.435",
-	  "summary": "A novel modal analysis method named RVMD is proposed, inspired by the Hilbert-Huang transform and variational mode decomposition, to extract coherent structures in fluid flows. The combination of RVMD and Hilbert spectral analysis leads to a modal-based time-frequency analysis framework in the Hilbert view, providing a potentially powerful tool to discover, quantify, and analyse the low-order dynamics featured by transient and/or nonstationary properties in complex flow problems."
+	  "summary": "A novel modal analysis method named RVMD is proposed, and its combination with Hilbert spectral analysis yields a modal-based time-frequency analysis framework in the Hilbert view, providing a powerful tool to discover, quantify, and analyse low-order dynamics with transient and nonstationary properties in spatiotemporal data."
 	}
   ],
   "skills": [
@@ -111,15 +111,26 @@
     }
   ],
   "interests": [
-    {
-      "name": "Physics of Fluids",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Turbulence",
-		"Geophysical Fluid Dynamics",
-		"Computational Fluid Dynamics"
-      ]
-    }
+	{
+	  "name": "Physics of Fluids",
+	  "icon": "fa-solid fa-tag",
+	  "keywords": [
+		"Turbulence",
+		"Particle-Laden Flows",
+		"Compressible Flows",
+		"Geophysical Fluid Dynamics"
+	  ]
+	},
+	{
+	  "name": "Computational Methods",
+	  "icon": "fa-solid fa-tag",
+	  "keywords": [
+		"Direct Numerical Simulation (DNS)",
+		"High-Performance Computing (HPC)",
+		"Parallel Computing",
+		"GPU Acceleration"
+	  ]
+	}
   ],
   "references": [
   ],
