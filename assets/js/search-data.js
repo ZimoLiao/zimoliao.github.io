@@ -418,11 +418,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+            },},{id: "news-our-article-on-particle-laden-turbulence-was-accepted-by-journal-of-fluid-mechanics",
+          title: '🎉 Our article on particle-laden turbulence was accepted by *Journal of Fluid Mechanics*!...',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/2025-06-06/";
+              window.location.href = "/news/2025-06-05/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
