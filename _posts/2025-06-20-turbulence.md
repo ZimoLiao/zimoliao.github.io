@@ -7,6 +7,7 @@ tags: turbulence
 categories: popular_science
 images:
   venobox: true
+# giscus_comments: true
 ---
 
 Turbulence (turbulent flows), usually referred to as the most important unsolved problem in classical physics (by Richard Feynman), is ubiquitous in natural and engineering processes - from the water flow in a small faucet to the atmospheric turbulence enveloping the planets. As a fascinating subject in various senses, "turbulence" is associated with a lot of great personalities in fluid physics and mathematics - O. Reynolds, L. Prandtl, von Karman, G.I. Taylor, A.N. Kolmogorov - and appears in many great pieces of art such as Leonardo da Vinci's manuscripts, The Great Wave off Kanagawa and The Starry Night of Van Gogh.
@@ -17,6 +18,7 @@ Turbulence (turbulent flows), usually referred to as the most important unsolved
     display: flex;
     flex-wrap: wrap;
     margin: 20px 0;
+  	align-items: center;
   }
   /* 每个画廊项占 1/3 宽度 */
   .myGallery-wrap .venobox {
