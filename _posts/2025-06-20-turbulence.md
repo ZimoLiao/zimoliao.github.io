@@ -4,7 +4,7 @@ title: About Turbulence
 date: 2025-06-20
 description: 
 tags: turbulence
-categories: popular_science
+categories: popular-science
 images:
   venobox: true
 # giscus_comments: true

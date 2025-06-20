@@ -4,7 +4,7 @@ title: Wall-bounded Turbulence
 date: 2025-06-20
 description: ""
 tags: turbulence
-categories: popular_science
+categories: popular-science
 # giscus_comments: true
 ---
 
