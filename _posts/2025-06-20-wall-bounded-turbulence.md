@@ -1,0 +1,16 @@
+---
+layout: post
+title: Wall-bounded Turbulence
+date: 2025-06-20
+description: ""
+tags: turbulence
+categories: popular_science
+---
+
+Turbulent flows are highly dynamic, irregular, and seemingly chaotic, characterized by swirling eddies and coherent structures spanning a wide range of spatiotemporal scales. These complex motions become increasingly rich and fully developed at high Reynolds numbers. Here, we present an instantaneous snapshot of a turbulent channel flow at a friction Reynolds number of 2000, highlighting intricate vortical structures identified using the Q-criterion, a widely used method for vortex visualization. The smaller panels illustrate the evolution of near-wall streaky structures as the Reynolds number increases from 300 to 750 and finally to 2000, revealing a progressive intensification and fragmentation of turbulence.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/posts/channelTurbulence.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
