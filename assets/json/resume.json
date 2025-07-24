@@ -55,8 +55,8 @@
 		{
 			"name": "Non-monotonic effect of Stokes number on turbulence modulation in particle-laden channel flow",
 			"publisher": "Journal of Fluid Mechanics",
-			"releaseDate": "2025",
-			"url": "",
+			"releaseDate": "2025-07-24",
+			"url": "https://doi.org/10.1017/jfm.2025.10340",
 			"summary": "Four-way coupled PP-DNS shows that increasing particle inertia first enhances, then reduces drag, before returning to the single-phase state. Turbulence modulation is driven by the competition between particle-induced transport and dissipation, as revealed by a comprehensive two-phase statistical analysis. Analytical examination of limiting Stokes numbers (0 or ∞) clarifies particle inertia effects."
 		},
 		{
