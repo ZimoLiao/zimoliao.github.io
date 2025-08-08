@@ -5,8 +5,6 @@ date: 2025-08-08
 description: 
 tags: turbulence
 categories: notes
-images:
-  venobox: true
 # giscus_comments: true
 ---
 
