@@ -1,5 +1,15 @@
+---
+layout: post
+title: Navier-Stokes Equations in the Wavenumber Space
+date: 2025-08-08
+description: 
+tags: turbulence
+categories: notes
+images:
+  venobox: true
+# giscus_comments: true
+---
 
-# Navier-Stokes Equations in the Wavenumber Space
 
 Consider a 3D turbulent fluid flow occupying a periodic cubic box of side length $L$. 
 Any field variable $f(\bm{x})$, where $\bm{x}=(x_l),$ $x_l\in[0,L]$ for $l=1,2,3$, can be expanded in a Fourier series
