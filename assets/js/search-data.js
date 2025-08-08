@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-wall-bounded-turbulence",
+        },{id: "post-navier-stokes-equations-in-the-wavenumber-space",
+        
+          title: "Navier-Stokes Equations in the Wavenumber Space",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/nse-in-wavenumber-space/";
+          
+        },
+      },{id: "post-wall-bounded-turbulence",
         
           title: "Wall-bounded Turbulence",
         
