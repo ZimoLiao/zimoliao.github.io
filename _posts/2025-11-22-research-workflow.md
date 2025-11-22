@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Research Workflow (Chinese)
+title: My Research Workflow (in Chinese)
 date: 2025-11-22
 description: 
-tags: 
-categories: workflow
+tags: workflow
+categories: notes
 images:
   venobox: true
 # giscus_comments: true
