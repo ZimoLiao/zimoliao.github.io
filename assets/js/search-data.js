@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "publications",
-          description: "Publications by categories in reversed chronological order. More details about my publications can be found on my Google Scholar profile.",
+          description: "Publications by categories in reverse chronological order. More details about my publications can be found on my Google Scholar profile.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -30,18 +30,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-my-research-workflow-in-chinese",
-        
-          title: "My Research Workflow (in Chinese)",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/research-workflow/";
-          
-        },
-      },{id: "post-navier-stokes-equations-in-the-wavenumber-space",
+        },{id: "post-navier-stokes-equations-in-the-wavenumber-space",
         
           title: "Navier-Stokes Equations in the Wavenumber Space",
         
