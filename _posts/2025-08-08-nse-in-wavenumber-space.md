@@ -89,7 +89,7 @@ $$
 
 Here, the derivation of the quadratic nonlinear term has utilized the continuity equation and a variable substitution, $\boldsymbol{p}+\boldsymbol{k}'=\boldsymbol{k}$.
 
-An intuition is, in wavenumber space, the velocity $\hat{\boldsymbol{u}}$ should be normal to the wavevector $\boldsymbol{k}$ due to the incompressible condition. Hence, it's natural to ask what will happen if we decompose INSE into two components -- one parallel to and one normal to $\boldsymbol{k}$.
+Intuitively, in wavenumber space, the velocity $\hat{\boldsymbol{u}}$ should be normal to the wavevector $\boldsymbol{k}$ due to the incompressibility constraint. Hence, it's natural to ask what will happen if we decompose INSE into two components -- one parallel to and one normal to $\boldsymbol{k}$.
 
 Projecting (8) along $\boldsymbol{k}$ gives the pressure Poisson equation in wavenumber space
 
@@ -103,7 +103,7 @@ $$
 
 Imposing $({k_lk_n}/{k^2})\hat{f}_n(\boldsymbol{k},t)=0$ ensures divergence-free forcing for numerical simulations of forced incompressible homogeneous isotropic turbulence.
 
-(8) minus (10), we have
+Subtracting (10) from (8), we have
 
 $$
 \bigg(\frac{\partial }{\partial t}+\nu k^2\bigg)\hat{u}_l(\boldsymbol{k},t)
@@ -117,7 +117,7 @@ here $P_{ln}(\boldsymbol{k})\equiv\delta_{ln}-{(k_lk_n)}/{k^2}$ is the projectio
 ## Energy balance equation
 
 We then drop the forcing term in (11), focusing on the intrinsic properties of the turbulent flows governed by INSE.
-Particularly, we are concerned about how the kinetic energy is transfered in this system.
+In particular, we are concerned with how the kinetic energy is transferred in this system.
 
 $$
 \bigg(\frac{\partial }{\partial t}+2\nu k^2\bigg)\frac{1}{2}\hat{u}_l^*(\boldsymbol{k},t)\hat{u}_l(\boldsymbol{k},t)
@@ -127,7 +127,7 @@ $$
 
 Here the superscript * denotes the complex conjugate.
 
-Take the ensemble average of the above equation, we obtain the balance equation of kinetic energy, $\hat{E}(\boldsymbol{k},t)\equiv\langle\frac{1}{2}\hat{u}_l^*(\boldsymbol{k},t)\hat{u}_l(\boldsymbol{k},t)\rangle$
+Taking the ensemble average of the above equation, we obtain the balance equation of kinetic energy, $\hat{E}(\boldsymbol{k},t)\equiv\langle\frac{1}{2}\hat{u}_l^*(\boldsymbol{k},t)\hat{u}_l(\boldsymbol{k},t)\rangle$
 
 $$
 \bigg(\frac{\partial }{\partial t}+2\nu k^2\bigg)\hat{E}(\boldsymbol{k},t)
@@ -135,7 +135,7 @@ $$
 k_mP_{ln}(\boldsymbol{k})\,\Im\bigg\{\sum_{\boldsymbol{k}'}\big\langle{\hat{u}_l(\boldsymbol{k},t)\hat{u}_m^*(\boldsymbol{k}-\boldsymbol{k}',t)\hat{u}_n^*(\boldsymbol{k}',t)}\big\rangle\bigg\}.
 $$
 
-$\hat{E}(\boldsymbol{k},t)$ is real-valued, so is the right-hand side. Thus we take its imaginary part, denoted by $\Im$.
+$\hat{E}(\boldsymbol{k},t)$ is real-valued, and so is the right-hand side. Thus we take its imaginary part, denoted by $\Im$.
 
 We denote the right-hand side as $\hat{T}(\boldsymbol{k},t)$, and -- using the Hermitian symmetry of the real-valued velocity field, and a variable substitution -- it can also be expressed as
 
