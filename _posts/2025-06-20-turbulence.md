@@ -10,7 +10,7 @@ images:
 # giscus_comments: true
 ---
 
-Turbulence (turbulent flows), usually referred to as the most important unsolved problem in classical physics (by Richard Feynman), is ubiquitous in natural and engineering processes - from the water flow in a small faucet to the atmospheric turbulence enveloping the planets. As a fascinating subject in various senses, "turbulence" is associated with a lot of great personalities in fluid physics and mathematics - O. Reynolds, L. Prandtl, von Karman, G.I. Taylor, A.N. Kolmogorov - and appears in many great pieces of art such as Leonardo da Vinci's manuscripts, The Great Wave off Kanagawa and The Starry Night of Van Gogh.
+Turbulence (turbulent flows), usually referred to as the most important unsolved problem in classical physics (by Richard Feynman), is ubiquitous in natural and engineering processes - from the water flow in a small faucet to the atmospheric turbulence enveloping the planets. As a fascinating subject in various senses, "turbulence" is associated with a lot of great personalities in fluid physics and mathematics - O. Reynolds, L. Prandtl, von Karman, G.I. Taylor, A.N. Kolmogorov - and appears in many great pieces of art such as Leonardo da Vinci's manuscripts, The Great Wave off Kanagawa, and Van Gogh's The Starry Night.
 
 <style>
   /* 包裹画廊 */
@@ -47,13 +47,13 @@ Turbulence (turbulent flows), usually referred to as the most important unsolved
   </a>
 </div>
 
-Yet, formidable challenges go with the beauty of turbulent flows: nonlinearity, multi-scale nature, and irregularity, just to name a few. As said by Guy Beart, 
+Yet, formidable challenges accompany the beauty of turbulent flows: nonlinearity, multi-scale nature, and irregularity, just to name a few. As said by Guy Beart, 
 
 > Turbulence toiler, on the rack,
 > For each step forward, two steps back!
 
-By now, we still don't fully understand where turbulence comes from (the transition between laminar and turbulent states) and where it goes (toward somewhat ultimate scaling?).
-Scientists have been working hard on this problem for decades, flaring sparks on the boundless ocean to guide the later generations. And now, it's our turn to continue this voyage.
+To this day, we still don't fully understand where turbulence comes from (the transition between laminar and turbulent states) and where it goes (toward some ultimate scaling?).
+Scientists have been working hard on this problem for decades, flaring sparks on the boundless ocean to guide later generations. And now, it's our turn to continue this voyage.
 
 #### Reference
 
