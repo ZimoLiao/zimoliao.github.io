@@ -6,7 +6,6 @@
 		"email": "zimoliao@mail.ustc.edu.cn",
 		"phone": "",
 		"url": "",
-		"summary": "A PhD candidate in Fluid Mechanics at USTC, investigating turbulent flows through numerical simulations and theoretical analysis.",
 		"location": {},
 		"profiles": []
 	},
@@ -79,23 +78,30 @@
 	],
 	"interests": [
 		{
-			"name": "Physics of Fluids",
+			"name": "Turbulence and Multiphase Flows",
 			"icon": "fa-solid fa-tag",
 			"keywords": [
-				"Turbulence",
-				"Particle-Laden Flows",
-				"Compressible Flows",
-				"Geophysical Fluid Dynamics"
+				"Particle-Laden Turbulence",
+				"Wall-Bounded Flows",
+				"Statistical Theory of Turbulence"
 			]
 		},
 		{
-			"name": "Scientific Computing",
+			"name": "Computational Fluid Dynamics",
 			"icon": "fa-solid fa-tag",
 			"keywords": [
-				"Direct Numerical Simulation (DNS)",
-				"High-Performance Computing (HPC)",
-				"Parallel Programming with MPI/OpenMP",
-				"GPU-Accelerated Simulation"
+				"Direct Numerical Simulation",
+				"High-Performance Computing",
+				"GPU Computing"
+			]
+		},
+		{
+			"name": "Artificial Intelligence",
+			"icon": "fa-solid fa-tag",
+			"keywords": [
+				"AI for Science",
+				"Digital Humans",
+				"Agent Systems"
 			]
 		}
 	],
