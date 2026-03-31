@@ -140,16 +140,16 @@ $\hat{E}(\boldsymbol{k},t)$ is real-valued, and so is the right-hand side. Thus 
 We denote the right-hand side as $\hat{T}(\boldsymbol{k},t)$, and -- using the Hermitian symmetry of the real-valued velocity field, and a variable substitution -- it can also be expressed as
 
 $$
-\hat{T}(\boldsymbol{k},t)=k_mP_{ln}(\boldsymbol{k})\,\Im\bigg\{\sum_{\substack{\boldsymbol{p},\,\boldsymbol{q}  \boldsymbol{k}+\boldsymbol{p}+\boldsymbol{q}=0}}\big\langle{\hat{u}_l(\boldsymbol{k},t)\hat{u}_m(\boldsymbol{p},t)\hat{u}_n(\boldsymbol{q},t)}\big\rangle\bigg\} \\
-=\Im\bigg\{\sum_{\substack{\boldsymbol{p},\,\boldsymbol{q}  \boldsymbol{k}+\boldsymbol{p}+\boldsymbol{q}=0}}\big\langle{k_m\hat{u}_n(\boldsymbol{k},t)\hat{u}_m(\boldsymbol{p},t)\hat{u}_n(\boldsymbol{q},t)}\big\rangle\bigg\}
+\hat{T}(\boldsymbol{k},t)=k_mP_{ln}(\boldsymbol{k})\,\Im\bigg\{\sum_{\substack{\boldsymbol{p},\,\boldsymbol{q} \\ \boldsymbol{k}+\boldsymbol{p}+\boldsymbol{q}=0}}\big\langle{\hat{u}_l(\boldsymbol{k},t)\hat{u}_m(\boldsymbol{p},t)\hat{u}_n(\boldsymbol{q},t)}\big\rangle\bigg\} \\
+=\Im\bigg\{\sum_{\substack{\boldsymbol{p},\,\boldsymbol{q} \\ \boldsymbol{k}+\boldsymbol{p}+\boldsymbol{q}=0}}\big\langle{k_m\hat{u}_n(\boldsymbol{k},t)\hat{u}_m(\boldsymbol{p},t)\hat{u}_n(\boldsymbol{q},t)}\big\rangle\bigg\}
 $$
 
 When it is summed over all $\boldsymbol{k}$, we have
 
 $$
-\sum_{\boldsymbol{k}}\hat{T}(\boldsymbol{k},t)=\Im\bigg\{\sum_{\substack{\boldsymbol{k},\,\boldsymbol{p},\,\boldsymbol{q}  \boldsymbol{k}+\boldsymbol{p}+\boldsymbol{q}=0}}\big\langle{k_m\hat{u}_n(\boldsymbol{k},t)\hat{u}_m(\boldsymbol{p},t)\hat{u}_n(\boldsymbol{q},t)}\big\rangle\bigg\} \\
-=\Im\bigg\{\sum_{\substack{\boldsymbol{k},\,\boldsymbol{p},\,\boldsymbol{q}  \boldsymbol{k}+\boldsymbol{p}+\boldsymbol{q}=0}}\big\langle{-(p_m+q_m)\hat{u}_n(\boldsymbol{k},t)\hat{u}_m(\boldsymbol{p},t)\hat{u}_n(\boldsymbol{q},t)}\big\rangle\bigg\} \\
-=\Im\bigg\{\sum_{\substack{\boldsymbol{k},\,\boldsymbol{p},\,\boldsymbol{q}  \boldsymbol{k}+\boldsymbol{p}+\boldsymbol{q}=0}}\big\langle{-q_m\hat{u}_n(\boldsymbol{q},t)\hat{u}_m(\boldsymbol{p},t)\hat{u}_n(\boldsymbol{k},t)}\big\rangle\bigg\}=-\sum_{\boldsymbol{q}}\hat{T}(\boldsymbol{q},t)
+\sum_{\boldsymbol{k}}\hat{T}(\boldsymbol{k},t)=\Im\bigg\{\sum_{\substack{\boldsymbol{k},\,\boldsymbol{p},\,\boldsymbol{q} \\ \boldsymbol{k}+\boldsymbol{p}+\boldsymbol{q}=0}}\big\langle{k_m\hat{u}_n(\boldsymbol{k},t)\hat{u}_m(\boldsymbol{p},t)\hat{u}_n(\boldsymbol{q},t)}\big\rangle\bigg\} \\
+=\Im\bigg\{\sum_{\substack{\boldsymbol{k},\,\boldsymbol{p},\,\boldsymbol{q} \\ \boldsymbol{k}+\boldsymbol{p}+\boldsymbol{q}=0}}\big\langle{-(p_m+q_m)\hat{u}_n(\boldsymbol{k},t)\hat{u}_m(\boldsymbol{p},t)\hat{u}_n(\boldsymbol{q},t)}\big\rangle\bigg\} \\
+=\Im\bigg\{\sum_{\substack{\boldsymbol{k},\,\boldsymbol{p},\,\boldsymbol{q} \\ \boldsymbol{k}+\boldsymbol{p}+\boldsymbol{q}=0}}\big\langle{-q_m\hat{u}_n(\boldsymbol{q},t)\hat{u}_m(\boldsymbol{p},t)\hat{u}_n(\boldsymbol{k},t)}\big\rangle\bigg\}=-\sum_{\boldsymbol{q}}\hat{T}(\boldsymbol{q},t)
 $$
 
 It is straightforward that the summation should be zero, 
