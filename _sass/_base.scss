@@ -544,6 +544,108 @@ footer.sticky-bottom {
   }
 }
 
+.featured-repo-card {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 1.4rem 1.5rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 14px;
+  background: linear-gradient(180deg, var(--global-bg-color) 0%, var(--global-card-bg-color) 100%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+
+  &__eyebrow {
+    margin-bottom: 0.35rem;
+    color: var(--global-text-color-light);
+    font-family: monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  &__title-row {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.85rem;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1.35rem;
+  }
+
+  &__badge {
+    padding: 0.18rem 0.55rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    color: var(--global-text-color-light);
+    font-size: 0.78rem;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
+
+  &__description {
+    margin-bottom: 1rem;
+    color: var(--global-text-color);
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem 1rem;
+    margin-bottom: 1rem;
+    color: var(--global-text-color-light);
+    font-size: 0.92rem;
+
+    span {
+      display: inline-flex;
+      gap: 0.38rem;
+      align-items: center;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 0.75rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.9rem;
+    border-top: 1px solid var(--global-divider-color);
+  }
+
+  &__status {
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+  }
+
+  &__link,
+  &__fallback-link {
+    color: var(--global-theme-color);
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  &[data-state="ready"] {
+    .featured-repo-card__status,
+    .featured-repo-card__fallback-link {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .featured-repo-card {
+    padding: 1.1rem 1rem;
+
+    &__title-row,
+    &__actions {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+}
+
 // Blog
 
 .header-bar {
