@@ -222,6 +222,42 @@ ul.task-list input[type="checkbox"] {
   border-top: 1px solid var(--global-divider-color);
 }
 
+.profile-social {
+  margin-top: 0.9rem;
+  text-align: center;
+
+  .contact-icons {
+    font-size: 1.35rem;
+
+    a {
+      margin: 0 0.2rem;
+
+      img {
+        width: 1.05rem;
+        height: 1.05rem;
+        margin-bottom: 0;
+      }
+
+      svg {
+        width: 1.15rem;
+        height: 1.15rem;
+        margin-bottom: 0;
+
+        image {
+          width: 1.15rem;
+          height: 1.15rem;
+        }
+      }
+    }
+  }
+
+  .contact-note {
+    margin-top: 0.45rem;
+    font-size: 0.68rem;
+    line-height: 1.35;
+  }
+}
+
 @media (min-width: 576px) {
   .profile {
     width: 30%;
