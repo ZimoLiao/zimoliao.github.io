@@ -6,6 +6,6 @@ test("medium zoom uses a larger desktop margin and smaller mobile margin", () =>
   const script = fs.readFileSync("assets/js/zoom.js", "utf8");
 
   assert.match(script, /window\.innerWidth\s*>=\s*768/);
-  assert.match(script, /const margin = isDesktop \? 48 : 24/);
+  assert.match(script, /const margin = isDesktop \? 96 : 24/);
   assert.match(script, /margin,/);
 });
