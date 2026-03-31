@@ -35,5 +35,7 @@ test("buildRepoCardHtml renders key repository metadata", () => {
   assert.match(html, /1\.3k/);
   assert.match(html, /84/);
   assert.match(html, /Updated Mar 2026/);
-  assert.match(html, /View repository/);
+  assert.match(html, /featured-repo-card__title-link/);
+  assert.match(html, /href="https:\/\/github.com\/zimoliao\/scholaraio"/);
+  assert.doesNotMatch(html, /View repository/);
 });

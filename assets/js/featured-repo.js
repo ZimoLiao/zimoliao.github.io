@@ -43,18 +43,17 @@
     return `
       <div class="featured-repo-card__eyebrow">${fullName}</div>
       <div class="featured-repo-card__title-row">
-        <h3 class="featured-repo-card__title">${title}</h3>
+        <h3 class="featured-repo-card__title">
+          <a class="featured-repo-card__title-link" href="${repoUrl}" target="_blank" rel="noopener noreferrer">${title}</a>
+        </h3>
         <span class="featured-repo-card__badge">GitHub</span>
       </div>
       <p class="featured-repo-card__description">${description}</p>
       <div class="featured-repo-card__meta">
         <span><i class="ti ti-code"></i>${language}</span>
-        <span><i class="ti ti-star-filled"></i>${stars}</span>
+        <span class="featured-repo-card__meta-star"><i class="ti ti-star-filled"></i>${stars}</span>
         <span><i class="ti ti-git-fork"></i>${forks}</span>
         <span><i class="ti ti-clock"></i>${updated}</span>
-      </div>
-      <div class="featured-repo-card__actions">
-        <a class="featured-repo-card__link" href="${repoUrl}" target="_blank" rel="noopener noreferrer">View repository</a>
       </div>
     `;
   }
@@ -66,9 +65,7 @@
 
   function applyRepoError(card) {
     card.dataset.state = "fallback";
-    const link = card.dataset.repoUrl;
     card.querySelector(".featured-repo-card__status").textContent = "GitHub metadata is unavailable right now.";
-    card.querySelector(".featured-repo-card__fallback-link").href = link;
   }
 
   async function loadFeaturedRepoCard(card) {

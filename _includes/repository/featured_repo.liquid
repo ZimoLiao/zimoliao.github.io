@@ -9,7 +9,16 @@
 >
   <div class="featured-repo-card__eyebrow">{{ include.repository }}</div>
   <div class="featured-repo-card__title-row">
-    <h3 class="featured-repo-card__title">{{ include.repository | split: '/' | last }}</h3>
+    <h3 class="featured-repo-card__title">
+      <a
+        class="featured-repo-card__title-link"
+        href="{{ repo_url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ include.repository | split: '/' | last }}
+      </a>
+    </h3>
     <span class="featured-repo-card__badge">GitHub</span>
   </div>
   <p class="featured-repo-card__description">
@@ -20,13 +29,5 @@
   </div>
   <div class="featured-repo-card__actions">
     <span class="featured-repo-card__status">Preparing repository card.</span>
-    <a
-      class="featured-repo-card__fallback-link"
-      href="{{ repo_url }}"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Open on GitHub
-    </a>
   </div>
 </div>

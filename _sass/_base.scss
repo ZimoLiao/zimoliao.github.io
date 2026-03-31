@@ -575,6 +575,17 @@ footer.sticky-bottom {
     font-size: 1.35rem;
   }
 
+  &__title-link {
+    color: var(--global-theme-color);
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: underline;
+    }
+  }
+
   &__badge {
     padding: 0.18rem 0.55rem;
     border: 1px solid var(--global-divider-color);
@@ -605,6 +616,10 @@ footer.sticky-bottom {
     }
   }
 
+  &__meta-star {
+    color: #d29922;
+  }
+
   &__actions {
     display: flex;
     gap: 0.75rem 1rem;
@@ -619,7 +634,6 @@ footer.sticky-bottom {
     font-size: 0.9rem;
   }
 
-  &__link,
   &__fallback-link {
     color: var(--global-theme-color);
     font-weight: 500;
@@ -627,8 +641,7 @@ footer.sticky-bottom {
   }
 
   &[data-state="ready"] {
-    .featured-repo-card__status,
-    .featured-repo-card__fallback-link {
+    .featured-repo-card__status {
       display: none;
     }
   }
