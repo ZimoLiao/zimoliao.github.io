@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Nothing happens in vain, but everything from reason and by necessity. by Leucippus (460 BCE) #<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
