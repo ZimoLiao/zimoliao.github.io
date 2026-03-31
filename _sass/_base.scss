@@ -215,6 +215,12 @@ ul.task-list input[type="checkbox"] {
   margin-right: 1rem;
 }
 
+.about-section + .about-section {
+  margin-top: 1.75rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+
 @media (min-width: 576px) {
   .profile {
     width: 30%;
