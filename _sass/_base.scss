@@ -1043,6 +1043,28 @@ footer.sticky-bottom {
   }
 }
 
+.selected-publications {
+  .publications {
+    ol.bibliography {
+      li {
+        .abbr.col-sm-3 {
+          @media (min-width: 576px) {
+            flex: 0 0 25%;
+            max-width: 25%;
+          }
+        }
+
+        [id].col-sm-7 {
+          @media (min-width: 576px) {
+            flex: 0 0 75%;
+            max-width: 75%;
+          }
+        }
+      }
+    }
+  }
+}
+
 // Rouge Color Customization
 figure.highlight {
   margin: 0 0 1rem;

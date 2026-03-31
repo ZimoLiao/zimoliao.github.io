@@ -56,16 +56,6 @@ layout: default
       </div>
     {% endif %}
 
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <div class="about-section">
-        <h2>
-          <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
-        </h2>
-        {% include latest_posts.liquid %}
-      </div>
-    {% endif %}
-
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <div class="about-section">
@@ -80,6 +70,16 @@ layout: default
       <div class="about-section">
         <h2>Featured Repository</h2>
         {% include repository/featured_repo.liquid repository=page.featured_repo %}
+      </div>
+    {% endif %}
+
+    <!-- Latest posts -->
+    {% if page.latest_posts and page.latest_posts.enabled %}
+      <div class="about-section">
+        <h2>
+          <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
+        </h2>
+        {% include latest_posts.liquid %}
       </div>
     {% endif %}
 
