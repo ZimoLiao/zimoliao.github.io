@@ -22,7 +22,7 @@ $$
 \nabla f=\sum_{\boldsymbol{k}}(i \boldsymbol{k})\hat{f}(\boldsymbol{k})e^{i\boldsymbol{k}\cdot\boldsymbol{x}},\quad \nabla^2 f=\sum_{\boldsymbol{k}}(-k^2)\hat{f}(\boldsymbol{k})e^{i\boldsymbol{k}\cdot\boldsymbol{x}},
 $$
 
-where $k\equiv|\boldsymbol{k}|=\sqrt{k_lk_l}$.
+where $k \equiv \lvert \boldsymbol{k} \rvert = \sqrt{k_l k_l}$.
 
 The incompressible Navier–Stokes equations (INSE) governing the turbulent velocity field $\boldsymbol{u}(\boldsymbol{x},t)$ are
 
