@@ -63,12 +63,7 @@ ninja.data = [{
             window.location.href = "/blog/2025/turbulence/";
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-our-jfm-article-vol-966-a7-2023-has-been-cited-in-nature-reviews-methods-primers-vol-5-article-21-2025-a-recognition-from-the-broader-scientific-community",
+      },{id: "news-our-jfm-article-vol-966-a7-2023-has-been-cited-in-nature-reviews-methods-primers-vol-5-article-21-2025-a-recognition-from-the-broader-scientific-community",
           title: '🎉 Our JFM article (Vol. 966, A7, 2023) has been cited in Nature...',
           description: "",
           section: "News",},{id: "news-our-article-on-particle-laden-turbulence-was-accepted-by-jfm",
