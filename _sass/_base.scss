@@ -223,14 +223,15 @@ ul.task-list input[type="checkbox"] {
 }
 
 .profile-social {
-  margin-top: 0.9rem;
+  margin-top: 0.68rem;
   text-align: center;
 
   .contact-icons {
     font-size: 1.35rem;
 
     a {
-      margin: 0 0.2rem;
+      margin: 0 0.15rem;
+      color: var(--global-text-color);
 
       img {
         width: 1.05rem;
@@ -248,13 +249,26 @@ ul.task-list input[type="checkbox"] {
           height: 1.15rem;
         }
       }
+
+      i::before {
+        color: var(--global-text-color);
+      }
+
+      &:hover {
+        color: var(--global-text-color);
+        text-decoration: none;
+
+        i::before {
+          color: var(--global-text-color);
+        }
+      }
     }
   }
 
   .contact-note {
-    margin-top: 0.45rem;
+    margin-top: 0.34rem;
     font-size: 0.68rem;
-    line-height: 1.35;
+    line-height: 1.05;
   }
 }
 
