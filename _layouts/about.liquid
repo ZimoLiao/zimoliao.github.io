@@ -64,6 +64,13 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    {% if page.featured_repo %}
+      <h2>featured repository</h2>
+      <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+        {% include repository/repo.liquid repository=page.featured_repo %}
+      </div>
+    {% endif %}
+
     <!-- Social -->
     {% if page.social %}
       <div class="social">

@@ -22,6 +22,8 @@ latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
+
+featured_repo: zimoliao/scholaraio
 ---
 
 I am a Ph.D. candidate in the Department of Modern Mechanics at the University of Science and Technology of China (USTC), under the supervision of Prof. Xi-Yun Lu and Prof. Nan-Sheng Liu. My research interests span fluid dynamics—particularly turbulence—and its applications in geophysics, astrophysics, and related interdisciplinary fields.
