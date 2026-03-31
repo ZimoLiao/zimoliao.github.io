@@ -1252,6 +1252,13 @@ nav[data-toggle="toc"] {
   z-index: 999;
 }
 
+@media (min-width: 768px) {
+  .medium-zoom-image--opened {
+    max-width: 90vw !important;
+    max-height: 90vh !important;
+  }
+}
+
 #toc-sidebar {
   z-index: 1;
 }
