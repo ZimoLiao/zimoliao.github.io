@@ -16,12 +16,12 @@
 
 "Int. J. Multiph. Flow":
   url: https://www.sciencedirect.com/journal/international-journal-of-multiphase-flow
-  color: "#9CCA3C"
+  color: "#1B346C"
 
 "J. Non-Newton. Fluid Mech.":
   url: https://www.sciencedirect.com/journal/journal-of-non-newtonian-fluid-mechanics
-  color: "#9CCA3C"
+  color: "#150E3F"
 
 "Phys. Fluids":
-  url: https://publishing.aip.org/publications/journals/special-topics/phf/
-  color: "#00369f"
+  url: https://pubs.aip.org/aip/pof
+  color: "#0B3E73"
