@@ -30,3 +30,5 @@ I am a Ph.D. candidate in the Department of Modern Mechanics at the University o
 
 My recent research projects focus on particle-laden turbulence in wall-bounded geometries - a challenging regime where turbulent dynamics intertwine with multiphase interactions across a vast parameter space.
 I aim to elucidate the mechanisms underlying particle-induced turbulence modulation via an integration of the statistical theory of turbulence (continuous phase) and kinetic theory (dispersed particulate phase), seeking a harmonious physical picture of this complex system.
+
+Outside academia, I enjoy indie development, experimenting with AI applications, and spending time with films.
