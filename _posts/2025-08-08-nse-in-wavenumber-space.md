@@ -2,14 +2,13 @@
 layout: post
 title: Navier-Stokes Equations in the Wavenumber Space
 date: 2025-08-08
-description: 
+description:
 tags: turbulence
 categories: notes
 # giscus_comments: true
 ---
 
-
-Consider a 3D turbulent fluid flow occupying a periodic cubic box of side length $L$. 
+Consider a 3D turbulent fluid flow occupying a periodic cubic box of side length $L$.
 Any field variable $f(\boldsymbol{x})$, where $\boldsymbol{x}=(x_l),$ $x_l\in[0,L]$ for $l=1,2,3$, can be expanded in a Fourier series
 
 $$
@@ -58,18 +57,18 @@ $$
 \sum_{\boldsymbol{k}}(ik_m)\hat{u}_m(\boldsymbol{k},t)e^{i\boldsymbol{k}\cdot\boldsymbol{x}}=0.
 $$
 
-The nonlinear term can be rewritten as 
+The nonlinear term can be rewritten as
 
 $$
 \sum_{\boldsymbol{p}}\sum_{\boldsymbol{q}}(iq_m)\hat{u}_m(\boldsymbol{p},t)\hat{u}_l(\boldsymbol{q},t)e^{i(\boldsymbol{p}+\boldsymbol{q})\cdot\boldsymbol{x}}.
 $$
 
-We now focus on the coefficient of $e^{i\boldsymbol{k}\cdot\boldsymbol{x}}$ on both sides of the equation, which corresponds to the evolution equation for a single Fourier mode $\boldsymbol{k}$. 
+We now focus on the coefficient of $e^{i\boldsymbol{k}\cdot\boldsymbol{x}}$ on both sides of the equation, which corresponds to the evolution equation for a single Fourier mode $\boldsymbol{k}$.
 To obtain the evolution for a single Fourier mode $\boldsymbol{k}$, apply the operator
 
 $$
 \mathcal{F}\{\,\cdot\,\}_{\boldsymbol{k}}\equiv\langle(\,\cdot\,)e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}\rangle_L\equiv \frac{1}{L^3}\int_0^L\int_0^L\int_0^L(\,\cdot\,)e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}\,\mathrm{d}\boldsymbol{x}.
-$$ 
+$$
 
 Using orthogonality of the modes, one finds
 
@@ -81,7 +80,7 @@ $$
 +\hat{f}_l(\boldsymbol{k},t),
 $$
 
-and 
+and
 
 $$
 ik_m\hat{u}_m(\boldsymbol{k},t)=0
@@ -125,7 +124,7 @@ $$
 -P_{ln}(\boldsymbol{k})(ik_m)\sum_{\boldsymbol{k}'}\hat{u}_m(\boldsymbol{k}-\boldsymbol{k}',t)\hat{u}_n(\boldsymbol{k}',t)\hat{u}_l^*(\boldsymbol{k},t)
 $$
 
-Here the superscript * denotes the complex conjugate.
+Here the superscript \* denotes the complex conjugate.
 
 Taking the ensemble average of the above equation, we obtain the balance equation of kinetic energy, $\hat{E}(\boldsymbol{k},t)\equiv\langle\frac{1}{2}\hat{u}_l^*(\boldsymbol{k},t)\hat{u}_l(\boldsymbol{k},t)\rangle$
 
@@ -152,13 +151,13 @@ $$
 =\Im\bigg\{\sum_{\substack{\boldsymbol{k},\,\boldsymbol{p},\,\boldsymbol{q} \\ \boldsymbol{k}+\boldsymbol{p}+\boldsymbol{q}=0}}\big\langle{-q_m\hat{u}_n(\boldsymbol{q},t)\hat{u}_m(\boldsymbol{p},t)\hat{u}_n(\boldsymbol{k},t)}\big\rangle\bigg\}=-\sum_{\boldsymbol{q}}\hat{T}(\boldsymbol{q},t)
 $$
 
-It is straightforward that the summation should be zero, 
+It is straightforward that the summation should be zero,
 
 $$
 \sum_{\boldsymbol{k}}\hat{T}(\boldsymbol{k},t)=0,
 $$
 
-namely, this term merely represents a *transfer* of energy between modes.
+namely, this term merely represents a _transfer_ of energy between modes.
 
 ## Reference
 

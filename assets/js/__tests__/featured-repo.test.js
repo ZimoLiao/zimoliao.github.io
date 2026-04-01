@@ -1,11 +1,7 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
 
-const {
-  buildRepoCardHtml,
-  formatCompactCount,
-  formatUpdatedLabel,
-} = require("../featured-repo.js");
+const { buildRepoCardHtml, formatCompactCount, formatUpdatedLabel } = require("../featured-repo.js");
 
 test("formatCompactCount shortens large repository counts", () => {
   assert.equal(formatCompactCount(12), "12");

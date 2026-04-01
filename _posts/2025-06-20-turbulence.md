@@ -2,7 +2,7 @@
 layout: post
 title: About Turbulence
 date: 2025-06-20
-description: 
+description:
 tags: turbulence
 categories: popular-science
 images:
@@ -47,7 +47,7 @@ Turbulence (turbulent flows), usually referred to as the most important unsolved
   </a>
 </div>
 
-Yet, formidable challenges accompany the beauty of turbulent flows: nonlinearity, multi-scale nature, and irregularity, just to name a few. As said by Guy Beart, 
+Yet, formidable challenges accompany the beauty of turbulent flows: nonlinearity, multi-scale nature, and irregularity, just to name a few. As said by Guy Beart,
 
 > Turbulence toiler, on the rack,
 > For each step forward, two steps back!

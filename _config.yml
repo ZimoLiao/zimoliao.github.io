@@ -235,8 +235,8 @@ jekyll-archives:
       tags: "/blog/:type/:name/"
       categories: "/blog/:type/:name/"
 
-display_tags: ["turbulence","workflow"] # these tags will be displayed on the front page of your blog
-display_categories: ["popular-science","notes"] # these categories will be displayed on the front page of your blog
+display_tags: ["turbulence", "workflow"] # these tags will be displayed on the front page of your blog
+display_categories: ["popular-science", "notes"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
