@@ -1,0 +1,89 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$ROOT_DIR"
+
+usage() {
+  cat <<'EOF'
+usage: bin/local-build [--skip-build]
+
+Bootstrap the local Jekyll build environment and run a build.
+
+The script ensures that:
+  - bundle is available
+  - python3 -m nbconvert works
+  - jupyter-nbconvert exists in ~/.local/bin
+
+Use --skip-build if you only want to prepare the environment.
+EOF
+}
+
+skip_build=false
+for arg in "$@"; do
+  case "$arg" in
+    -h|--help)
+      usage
+      exit 0
+      ;;
+    --skip-build)
+      skip_build=true
+      ;;
+    *)
+      echo "Unknown option: $arg" >&2
+      usage >&2
+      exit 1
+      ;;
+  esac
+done
+
+if ! command -v bundle >/dev/null 2>&1; then
+  echo 'Missing `bundle` on PATH. Install Bundler first.' >&2
+  exit 1
+fi
+
+if ! command -v python3 >/dev/null 2>&1; then
+  echo 'Missing `python3` on PATH.' >&2
+  exit 1
+fi
+
+if ! python3 -m nbconvert --version >/dev/null 2>&1; then
+  cat >&2 <<'EOF'
+Missing Python nbconvert.
+Install it with:
+  sudo apt install -y python3-nbconvert
+EOF
+  exit 1
+fi
+
+LOCAL_BIN="$HOME/.local/bin"
+mkdir -p "$LOCAL_BIN"
+
+JUPYTER_NBCONVERT="$LOCAL_BIN/jupyter-nbconvert"
+if ! command -v jupyter-nbconvert >/dev/null 2>&1; then
+  cat > "$JUPYTER_NBCONVERT" <<'EOF'
+#!/usr/bin/env bash
+exec python3 -m nbconvert "$@"
+EOF
+  chmod +x "$JUPYTER_NBCONVERT"
+  echo "Created $JUPYTER_NBCONVERT"
+fi
+
+if ! command -v jupyter >/dev/null 2>&1; then
+  cat >&2 <<'EOF'
+Missing `jupyter` on PATH.
+Install it with:
+  sudo apt install -y jupyter-core
+EOF
+  exit 1
+fi
+
+export PATH="$LOCAL_BIN:$PATH"
+
+if "$skip_build"; then
+  echo "Environment is ready."
+  exit 0
+fi
+
+bundle exec jekyll build
