@@ -34,14 +34,14 @@
 	],
 	"awards": [
 		{
-			"title": "National Scholarship",
-			"date": "2020, 2024",
-			"awarder": "Ministry of Education of China"
-		},
-		{
 			"title": "Excellent Doctoral Graduate",
 			"date": "2026",
 			"awarder": "University of Science and Technology of China"
+		},
+		{
+			"title": "National Scholarship",
+			"date": "2020, 2024",
+			"awarder": "Ministry of Education of China"
 		},
 		{
 			"title": "National Xu Zhilun Outstanding Students Award",
