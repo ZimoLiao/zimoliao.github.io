@@ -255,11 +255,11 @@ ul.task-list input[type="checkbox"] {
       }
 
       &:hover {
-        color: var(--global-text-color);
+        color: var(--global-theme-color);
         text-decoration: none;
 
         i::before {
-          color: var(--global-text-color);
+          color: var(--global-theme-color);
         }
       }
     }

@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Nothing happens in vain, but everything from reason and by necessity. by Leucippus (460 BCE) #<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Nothing happens in vain, but everything from reason and by necessity. -- Leucippus (460 BCE) #<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right
@@ -30,5 +30,7 @@ I am a Ph.D. candidate in the Department of Modern Mechanics at the University o
 
 My recent research projects focus on particle-laden turbulence in wall-bounded geometries - a challenging regime where turbulent dynamics intertwine with multiphase interactions across a vast parameter space.
 I aim to elucidate the mechanisms underlying particle-induced turbulence modulation via an integration of the statistical theory of turbulence (continuous phase) and kinetic theory (dispersed particulate phase), seeking a harmonious physical picture of this complex system.
+
+I am drawn to three kinds of scientific work in particular: discovering and constructing mathematical structures of the physical world, solving physical puzzles from clues and evidence, and reproducing and understanding natural phenomena (especially geophysical processes).
 
 Outside academia, I enjoy indie development, especially building AI applications, and spending time with films.
