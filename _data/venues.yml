@@ -25,3 +25,7 @@
 "Phys. Fluids":
   url: https://pubs.aip.org/aip/pof
   color: "#0B3E73"
+
+"Phys. Rev. Fluids":
+  url: https://journals.aps.org/prfluids
+  color: "#00538B"
