@@ -58,8 +58,8 @@ _styles: |
     <figcaption class="gallery-caption">
       Volume rendering of vorticity magnitude in incompressible turbulent channel flow at
       <span class="math">\(Re_\tau = 300\)</span>. The computational domain is
-      <span class="math">\(4\pi h \times 2h \times 2\pi h\)</span>, nondimensionalized by the channel half-height
-      <span class="math">\(h\)</span>. Visualization rendered in ParaView.
+      <span class="math">\(4\pi h \times 2h \times 2\pi h\)</span>, where <span class="math">\(h\)</span> is the channel
+      half-height. Visualization rendered in ParaView.
     </figcaption>
   </figure>
 </div>
