@@ -48,12 +48,22 @@ layout: default
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <div class="about-section">
-        <h2>
-          <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
-        </h2>
-        {% include news.liquid limit=true %}
-      </div>
+      {% assign one_year_ago = site.time | date: '%s' | minus: 31536000 %}
+      {% assign recent_news_count = 0 %}
+      {% for item in site.news %}
+        {% assign item_timestamp = item.date | date: '%s' | plus: 0 %}
+        {% if item_timestamp >= one_year_ago %}
+          {% assign recent_news_count = recent_news_count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+      {% if recent_news_count > 0 %}
+        <div class="about-section">
+          <h2>
+            <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
+          </h2>
+          {% include news.liquid limit=true %}
+        </div>
+      {% endif %}
     {% endif %}
 
     <!-- Selected papers -->

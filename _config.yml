@@ -10,13 +10,13 @@ chinese_name: "廖紫默"
 contact_note: >
   Contact me through these links.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Zi-Mo Liao is a Ph.D. candidate in fluid mechanics at USTC, working on turbulence, multiphase flows, and high-performance computational fluid dynamics.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: mo-mark.svg # the image used as the favicon
 
 url: https://zimoliao.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -79,7 +79,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Zi-Mo's blog # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_description: Notes on turbulence and fluid mechanics
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -235,7 +235,7 @@ jekyll-archives:
       tags: "/blog/:type/:name/"
       categories: "/blog/:type/:name/"
 
-display_tags: ["turbulence", "workflow"] # these tags will be displayed on the front page of your blog
+display_tags: ["turbulence"] # these tags will be displayed on the front page of your blog
 display_categories: ["popular-science", "notes"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------

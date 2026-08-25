@@ -1,9 +1,8 @@
 <div class="news">
   {% if site.news != blank %}
-    {% assign news_size = site.news | size %}
     <div
       class="table-responsive"
-      {% if include.limit and page.announcements.scrollable and news_size > 3 %}
+      {% if include.limit and page.announcements.scrollable %}
         style="max-height: 60vw"
       {% endif %}
     >
@@ -12,9 +11,18 @@
         {% if include.limit and page.announcements.limit %}
           {% assign news_limit = page.announcements.limit %}
         {% else %}
-          {% assign news_limit = news_size %}
+          {% assign news_limit = site.news | size %}
         {% endif %}
-        {% for item in news limit: news_limit %}
+        {% assign displayed_news = 0 %}
+        {% assign one_year_ago = site.time | date: '%s' | minus: 31536000 %}
+        {% for item in news %}
+          {% assign item_timestamp = item.date | date: '%s' | plus: 0 %}
+          {% if include.limit and item_timestamp < one_year_ago %}
+            {% continue %}
+          {% endif %}
+          {% if displayed_news >= news_limit %}
+            {% break %}
+          {% endif %}
           <tr>
             <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
             <td>
@@ -25,6 +33,7 @@
               {% endif %}
             </td>
           </tr>
+          {% assign displayed_news = displayed_news | plus: 1 %}
         {% endfor %}
       </table>
     </div>
