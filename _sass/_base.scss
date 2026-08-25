@@ -301,6 +301,8 @@ ul.task-list input[type="checkbox"] {
 // Navbar customization
 
 .navbar {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
@@ -352,9 +354,24 @@ ul.task-list input[type="checkbox"] {
     }
   }
 
+  .navbar-nav .nav-label {
+    display: inline-grid;
+
+    &::before,
+    > span {
+      grid-area: 1 / 1;
+    }
+
+    &::before {
+      content: attr(data-label);
+      visibility: hidden;
+      font-weight: 400;
+    }
+  }
+
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
-    font-weight: bolder;
+    font-weight: 400;
     color: var(--global-theme-color);
 
     &:hover {
@@ -450,6 +467,12 @@ ul.task-list input[type="checkbox"] {
   &:hover {
     color: var(--global-hover-color);
   }
+}
+
+.toggle-container,
+#light-toggle {
+  flex: 0 0 26px;
+  width: 26px;
 }
 
 // Social (bottom)
