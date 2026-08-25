@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Nothing happens in vain, but everything from reason and by necessity. -- Leucippus (460 BCE) #<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Nothing happens in vain, but everything from reason and by necessity. — Leucippus (460 BCE) #<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right
@@ -26,11 +26,11 @@ latest_posts:
 featured_repo: zimoliao/scholaraio
 ---
 
-I am a Ph.D. candidate in the Department of Modern Mechanics at the University of Science and Technology of China (USTC), under the supervision of Prof. Xi-Yun Lu and Prof. Nan-Sheng Liu. My research interests span fluid dynamics—particularly turbulence—and its applications in geophysics, astrophysics, and related interdisciplinary fields.
+I am a Ph.D. candidate in the Department of Modern Mechanics at the University of Science and Technology of China ([USTC](https://en.ustc.edu.cn/)), under the supervision of Prof. Xi-Yun Lu and Prof. Nan-Sheng Liu. My research interests lie in fluid dynamics, with a particular focus on [turbulence]({% post_url 2025-06-20-turbulence %}), its applications in geophysics, and related interdisciplinary fields.
 
-My recent research projects focus on particle-laden turbulence in wall-bounded geometries - a challenging regime where turbulent dynamics intertwine with multiphase interactions across a vast parameter space.
+My recent work examines wall-bounded particle-laden turbulence, a challenging subject involving the interplay of turbulent dynamics and multiphase interactions across a broad parameter space.
 I aim to elucidate the mechanisms underlying particle-induced turbulence modulation via an integration of the statistical theory of turbulence (continuous phase) and kinetic theory (dispersed particulate phase), seeking a harmonious physical picture of this complex system.
 
-I am drawn to three kinds of scientific work in particular: discovering and constructing mathematical structures of the physical world, solving physical puzzles from clues and evidence, and reproducing and understanding natural phenomena (especially geophysical processes).
+I am drawn to three kinds of scientific work in particular: discovering and constructing mathematical structures of the physical world, solving physical puzzles from clues and evidence, and reproducing and understanding natural phenomena, especially geophysical processes.
 
 Outside academia, I enjoy indie development, especially building AI applications, and spending time with films.

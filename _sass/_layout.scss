@@ -31,6 +31,107 @@ body.sticky-bottom-footer {
   padding-bottom: 0;
 }
 
+body.home-background {
+  background-color: transparent;
+}
+
+.home-background > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.home-background > header {
+  position: relative;
+  z-index: 2;
+}
+
+.about-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background-color: #f4f7f8;
+
+  &::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background: rgba(255, 255, 255, 0.16);
+  }
+}
+
+@media (min-width: 992px) {
+  .about-background {
+    background-image: url("../video/home/sp-vorticity-mag-white-4k-poster.webp");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.about-background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-glass {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  border-radius: 6px;
+  box-shadow: 0 14px 34px rgba(27, 42, 56, 0.13);
+  backdrop-filter: blur(18px) saturate(0.9);
+  -webkit-backdrop-filter: blur(18px) saturate(0.9);
+}
+
+html[data-theme="dark"] {
+  .about-background {
+    background-color: #16191d;
+
+    &::after {
+      background: rgba(10, 13, 17, 0.48);
+    }
+  }
+
+  .about-background-video {
+    filter: brightness(0.72) saturate(0.8);
+  }
+
+  .about-glass {
+    background: rgba(28, 31, 36, 0.8);
+    border-color: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+  }
+}
+
+@media (max-width: 991.98px) {
+  body.home-background {
+    background-color: var(--global-bg-color);
+  }
+
+  .about-background {
+    display: none;
+  }
+
+  .about-glass,
+  html[data-theme="dark"] .about-glass {
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-home .post-title {
+    font-size: 2.125rem;
+  }
+}
+
 .container {
   max-width: $max-content-width;
 }
