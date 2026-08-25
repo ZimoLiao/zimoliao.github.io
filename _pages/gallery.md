@@ -52,7 +52,7 @@ _styles: |
   <figure class="gallery-item">
     <div class="gallery-media">
       <video controls autoplay muted loop playsinline preload="metadata">
-        <source src="{{ '/assets/video/gallery/sp-vorticity-mag-white-4k-original-241frames-24fps.mp4' | relative_url }}" type="video/mp4">
+        <source src="{{ '/assets/video/gallery/sp-vorticity-mag-white-ppt-under30mb.mp4' | relative_url }}" type="video/mp4">
       </video>
     </div>
     <figcaption class="gallery-caption">
