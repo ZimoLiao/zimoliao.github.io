@@ -9,12 +9,12 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-blog",
-          title: "Blog",
+  },{id: "nav-cv",
+          title: "CV",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/blog/";
+            window.location.href = "/cv/";
           },
         },{id: "nav-publications",
           title: "Publications",
@@ -25,17 +25,17 @@ ninja.data = [{
           },
         },{id: "nav-gallery",
           title: "Gallery",
-          description: "",
+          description: "All simulations and visualizations are my own work. Please email me to request permission before reuse.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/gallery/";
           },
-        },{id: "nav-cv",
-          title: "CV",
+        },{id: "nav-blog",
+          title: "Blog",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/blog/";
           },
         },{id: "post-navier-stokes-equations-in-the-wavenumber-space",
         
