@@ -3,11 +3,11 @@
     <li class="list-group-item resume-entry-item">
       <div class="resume-entry-grid resume-entry-grid--award">
         {% if content.date %} {% assign date = content.date | split: '-' | join: '.' %} {% else %} {% assign date = '' %} {% endif %}
-        <div class="resume-entry-date badge resume-date-badge danger-color-dark text-uppercase">{{ date }}</div>
-        <h6 class="resume-entry-title title">{{ content.title }}</h6>
-        <h6 class="resume-entry-detail" style="font-size: 0.95rem">{{ content.awarder }}</h6>
+        <div class="resume-entry-date badge resume-date-badge danger-color-dark text-uppercase type-meta">{{ date }}</div>
+        <h6 class="resume-entry-title title type-item-title type-item-title--accent">{{ content.title }}</h6>
+        <h6 class="resume-entry-detail type-body">{{ content.awarder }}</h6>
         {% if content.summary %}
-          <h6 class="resume-entry-summary" style="font-size: 0.95rem; font-style: italic">{{ content.summary }}</h6>
+          <h6 class="resume-entry-summary type-body" style="font-style: italic">{{ content.summary }}</h6>
         {% endif %}
       </div>
     </li>

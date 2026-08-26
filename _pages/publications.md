@@ -5,6 +5,9 @@ title: Publications
 description: Publications by categories in reverse chronological order. More details about my publications can be found on my <a href=https://scholar.google.com/citations?user=swB6AMAAAAAJ>Google Scholar profile</a>.
 nav: true
 nav_order: 2
+toc:
+  sidebar: right
+toc_class: publication-toc
 ---
 
 <!-- _pages/publications.md -->
@@ -13,7 +16,7 @@ nav_order: 2
 
 {% include bib_search.liquid %}
 
-<div class="publications">
+<div class="publications publications-year-toc">
 
 {% bibliography %}
 

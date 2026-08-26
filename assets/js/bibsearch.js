@@ -52,6 +52,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const updateInputField = () => {
     const hashValue = decodeURIComponent(window.location.hash.substring(1)); // Remove the '#' character
+    const isYearAnchor =
+      document.querySelector(".publications-year-toc") &&
+      Array.from(document.querySelectorAll(".publications-year-toc h2.bibliography")).some((heading) => heading.textContent.trim() === hashValue);
+
+    if (isYearAnchor) {
+      document.getElementById("bibsearch").value = "";
+      filterItems("");
+      return;
+    }
+
     document.getElementById("bibsearch").value = hashValue;
     filterItems(hashValue);
   };

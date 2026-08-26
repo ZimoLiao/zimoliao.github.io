@@ -1,13 +1,13 @@
 <div class="skill-groups">
   {% for content in data[1] %}
     <div class="skill-group" title="{{ content.level }}">
-      <div class="skill-group-category">
+      <div class="skill-group-category type-item-title type-item-title--accent">
         {% if content.icon %}
           <i class="{{ content.icon }}"></i>
         {% endif %}
         <span>{{ content.name }}</span>
       </div>
-      <ul class="skill-group-items">
+      <ul class="skill-group-items type-body">
         {% for item in content.keywords %}
           <li>
             {{ item -}}

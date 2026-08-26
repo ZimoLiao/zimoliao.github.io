@@ -46,7 +46,18 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-7{% else %}col-sm-10{% endif %}">
+  {% if page.toc_class == 'publication-toc' %}
+    {% if site.enable_publication_thumbnails %}
+      {% assign entry_column_class = 'col-sm-9' %}
+    {% else %}
+      {% assign entry_column_class = 'col-sm-12' %}
+    {% endif %}
+  {% elsif site.enable_publication_thumbnails %}
+    {% assign entry_column_class = 'col-sm-7' %}
+  {% else %}
+    {% assign entry_column_class = 'col-sm-10' %}
+  {% endif %}
+  <div id="{{ entry.key }}" class="{{ entry_column_class }} publication-entry-text">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -78,29 +89,39 @@
           {% endfor %}
         {%- endif -%}
 
-        {%- if forloop.length > 1 -%}
-          {% if forloop.first == false -%}
-            {%- if forloop.length > 2 %}, {% elsif forloop.length == 2 %}  {% endif %}
-          {%- endif %}
-          {%- if forloop.last and author_array_limit == author_array_size %}and {% endif -%}
-        {% endif %}
-        {%- if author_is_self -%}
-          <strong class="author-highlight">
-            {{- author.first }}
-            {{ author_last_html -}}
-          </strong>
-        {%- else -%}
-          {%- if coauthor_url -%}
-            <a href="{{ coauthor_url }}">
+        {%- assign author_separator = '' -%}
+        {%- unless forloop.first -%}
+          {%- if forloop.last and author_array_limit == author_array_size -%}
+            {%- if forloop.length == 2 -%}
+              {%- assign author_separator = ' and ' -%}
+            {%- else -%}
+              {%- assign author_separator = ', and ' -%}
+            {%- endif -%}
+          {%- else -%}
+            {%- assign author_separator = ', ' -%}
+          {%- endif -%}
+        {%- endunless -%}
+        <span class="publication-author-chunk">
+          {{- author_separator -}}
+          {%- if author_is_self -%}
+            <strong class="author-highlight">
               {{- author.first }}
               {{ author_last_html -}}
-            </a>
+            </strong>
           {%- else -%}
-            {{- author.first }}
-            {{ author_last_html -}}
-          {% endif %}
-        {%- endif -%}
-      {% endfor %}
+            {%- if coauthor_url -%}
+              <a href="{{ coauthor_url }}">
+                {{- author.first }}
+                {{ author_last_html -}}
+              </a>
+            {%- else -%}
+              {{- author.first }}
+              {{ author_last_html -}}
+            {% endif %}
+          {%- endif -%}
+        </span>
+      {%- endfor -%}
+      <span class="publication-author-ellipsis" hidden>, ...</span>
       {%- assign more_authors = author_array_size | minus: author_array_limit -%}
 
       {%- assign more_authors_hide = more_authors | append: ' more author' -%}
@@ -116,24 +137,26 @@
           {% endunless %}
         {%- endfor -%}
         {%- assign more_authors_show = more_authors_show | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
-        , and
-        <span
-          class="more-authors"
-          title="click to view {{ more_authors_hide }}"
-          onclick="
-              var element = $(this);
-              element.attr('title', '');
-              var more_authors_text = element.text() == '{{ more_authors_hide }}' ? '{{ more_authors_show }}' : '{{ more_authors_hide }}';
-              var cursorPosition = 0;
-              var textAdder = setInterval(function(){
-                element.html(more_authors_text.substring(0, cursorPosition + 1));
-                if (++cursorPosition == more_authors_text.length){
-                  clearInterval(textAdder);
-                }
-            }, '{{ site.more_authors_animation_delay }}');
-          "
-        >
-          {{- more_authors_hide -}}
+        <span class="publication-author-more">
+          , and
+          <span
+            class="more-authors"
+            title="click to view {{ more_authors_hide }}"
+            onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '{{ more_authors_hide }}' ? '{{ more_authors_show }}' : '{{ more_authors_hide }}';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.html(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '{{ site.more_authors_animation_delay }}');
+            "
+          >
+            {{- more_authors_hide -}}
+          </span>
         </span>
       {% endif %}
       {% if entry.annotation %}
@@ -177,7 +200,12 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
+    {% if page.toc_class == 'publication-toc' and entry.type == 'article' %}
+      {% assign publication_locator = entry.pages | default: entry.eid %}
+      {% capture periodical %}<em>{{ entry.journal }}</em>{% if entry.volume %} <span class="publication-volume">{{ entry.volume }}</span>{% endif %}{% if publication_locator %}, {{ publication_locator }}{% endif %}{% if entry.year %} ({{ entry.year }}){% endif %}{% endcapture %}
+    {% else %}
+      {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
+    {% endif %}
     <div class="periodical">
       {{ periodical | strip }}
     </div>

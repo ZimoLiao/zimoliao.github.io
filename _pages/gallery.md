@@ -4,6 +4,7 @@ permalink: /gallery/
 title: Gallery
 description: All simulations and visualizations are my own work. Please email me to request permission before reuse.
 description_html: All simulations and visualizations are my own work. Please <a href="mailto:zimoliao@mail.ustc.edu.cn">email me</a> to request permission before reuse.
+header_divider: true
 nav: true
 nav_order: 3
 _styles: |
@@ -37,11 +38,14 @@ _styles: |
 
   .gallery-caption {
     margin-top: 0.75rem;
-    color: var(--global-caption-color);
+    color: var(--global-gray-text-color);
     font-family: inherit;
-    font-size: 0.92rem;
     line-height: 1.55;
     letter-spacing: 0;
+    hyphens: auto;
+    text-align: justify;
+    text-align-last: left;
+    text-justify: inter-word;
   }
 
   .gallery-caption mjx-container[jax="CHTML"] {
@@ -57,6 +61,14 @@ _styles: |
   .gallery-caption a strong {
     color: inherit;
   }
+
+  @media (max-width: 575.98px) {
+    .gallery-caption {
+      hyphens: none;
+      text-align: left;
+      text-align-last: auto;
+    }
+  }
 ---
 
 <div class="gallery-grid">
@@ -66,7 +78,7 @@ _styles: |
         <source src="{{ '/assets/video/gallery/sp-vorticity-mag-white-ppt-under30mb.mp4' | relative_url }}" type="video/mp4">
       </video>
     </div>
-    <figcaption class="gallery-caption">
+    <figcaption class="gallery-caption type-body">
       Volume rendering of vorticity magnitude in incompressible turbulent channel flow at
       <span class="math">\(Re_b = 5150\)</span> (corresponding to <span class="math">\(Re_\tau \approx 300\)</span>). The computational domain is
       <span class="math">\(4\pi h \times 2h \times 2\pi h\)</span>, where <span class="math">\(h\)</span> is the channel
@@ -83,7 +95,7 @@ _styles: |
         >
       </video>
     </div>
-    <figcaption class="gallery-caption">
+    <figcaption class="gallery-caption type-body">
       Volume rendering of vorticity magnitude in four-way coupled particle-laden turbulent channel flow at
       <span class="math">\(Re_b = 5150\)</span> and <span class="math">\(St^+ = 100\)</span>, a regime of pronounced drag reduction
       and turbulence attenuation. Only particles in low-speed fluid regions are shown, colored by their wall-normal velocity

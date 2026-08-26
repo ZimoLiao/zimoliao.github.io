@@ -2,14 +2,14 @@
   <thead>
     <tr>
       {% for content in data[1] %}
-        <th scope="col">{{ content.language }}</th>
+        <th scope="col" class="type-item-title type-item-title--accent">{{ content.language }}</th>
       {% endfor %}
     </tr>
   </thead>
   <tbody>
     <tr>
       {% for content in data[1] %}
-        <td>{{ content.fluency }}</td>
+        <td class="type-body">{{ content.fluency }}</td>
       {% endfor %}
     </tr>
   </tbody>

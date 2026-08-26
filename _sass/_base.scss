@@ -158,7 +158,7 @@ ul.task-list input[type="checkbox"] {
 // Caption
 
 .caption {
-  color: var(--global-caption-color);
+  color: var(--global-gray-text-color);
   font-size: 0.875rem;
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
@@ -287,6 +287,7 @@ ul.task-list input[type="checkbox"] {
 
 .post-description {
   margin-bottom: 2rem;
+  color: var(--global-gray-text-color);
   font-size: 0.875rem;
 
   a {
@@ -296,6 +297,48 @@ ul.task-list input[type="checkbox"] {
       color: var(--global-theme-color);
       text-decoration: none;
     }
+  }
+}
+
+// Shared content typography
+.type-page-title {
+  font-size: 2.5rem !important;
+  font-weight: 400 !important;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.type-section-title {
+  font-size: 1.75rem !important;
+  font-weight: 400 !important;
+}
+
+.type-item-title {
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+}
+
+.type-item-title--accent {
+  color: var(--global-theme-color) !important;
+}
+
+.type-body {
+  font-size: 0.875rem !important;
+  font-weight: 400 !important;
+}
+
+.type-meta {
+  font-size: 0.75rem !important;
+  font-weight: 400 !important;
+}
+
+.post-header--divided {
+  border-bottom: 1px solid var(--global-divider-color);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+
+  .post-description {
+    margin-bottom: 0;
   }
 }
 
@@ -593,8 +636,6 @@ footer.sticky-bottom {
 
   .post-title {
     margin-bottom: 0;
-    font-size: 2.5rem;
-    font-weight: 400;
   }
 }
 
@@ -606,13 +647,6 @@ footer.sticky-bottom {
     border: 0;
     border-radius: 0;
     box-shadow: none !important;
-    font-size: 0.875rem;
-    font-weight: 400;
-
-    .card-title {
-      font-size: 1.75rem;
-      font-weight: 400 !important;
-    }
 
     .font-weight-light {
       font-weight: 400 !important;
@@ -622,22 +656,9 @@ footer.sticky-bottom {
       background-color: inherit;
       border: 0;
 
-      .title {
-        color: var(--global-theme-color);
-        font-size: 1rem;
-        font-weight: 500 !important;
-      }
-
-      h6:not(.title) {
-        font-size: 0.875rem !important;
-        font-weight: 400;
-      }
-
       .badge {
         color: var(--global-card-bg-color) !important;
         background-color: var(--global-theme-color) !important;
-        font-size: 0.75rem;
-        font-weight: 400;
       }
 
       .resume-date-badge {
@@ -774,12 +795,10 @@ footer.sticky-bottom {
   border-bottom: 1px solid var(--global-divider-color);
   margin-top: 0;
   padding: 0 0 0.9rem;
-  font-size: 0.9rem;
   text-align: left;
 
   &__label {
-    color: var(--global-text-color-light);
-    font-weight: 500;
+    color: var(--global-gray-text-color);
   }
 
   ul {
@@ -808,18 +827,16 @@ footer.sticky-bottom {
   li {
     border-bottom: 1px solid var(--global-divider-color);
     list-style: none;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 
     .post-meta {
       color: var(--global-text-color-light);
-      font-size: 0.875rem;
       margin-bottom: 0;
     }
 
     .post-tags {
       color: var(--global-text-color-light);
-      font-size: 0.875rem;
       padding-top: 0.25rem;
       padding-bottom: 0;
     }
@@ -836,6 +853,41 @@ footer.sticky-bottom {
     mjx-container[jax="CHTML"][display="true"] {
       display: unset;
     }
+  }
+}
+
+.blog-post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  color: var(--global-gray-text-color) !important;
+
+  &__item {
+    display: inline-flex;
+    align-items: baseline;
+    color: inherit !important;
+    white-space: nowrap;
+
+    a,
+    i,
+    i::before {
+      color: inherit !important;
+    }
+
+    & + &::before {
+      margin-right: 0.55rem;
+      margin-left: 0.55rem;
+      content: "·";
+    }
+  }
+}
+
+.post-list li .blog-post-meta a,
+.featured-posts .blog-post-meta a {
+  color: inherit !important;
+
+  &:hover {
+    color: var(--global-theme-color) !important;
   }
 }
 
@@ -1008,11 +1060,9 @@ footer.sticky-bottom {
         a.btn {
           color: var(--global-text-color);
           border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
+          padding: 0.25em 0.667ch;
           margin-left: 0;
+          line-height: 1;
 
           &:hover {
             color: var(--global-theme-color);
@@ -1086,6 +1136,83 @@ footer.sticky-bottom {
       border-color: var(--global-highlight-color);
     }
   }
+}
+
+.publications-year-toc h2.bibliography {
+  height: 0;
+  overflow: hidden;
+  border: 0;
+  border-top: 1px solid var(--global-divider-color);
+  margin: 0.75rem 0;
+  padding: 0;
+  font-size: 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.publications-year-toc .publication-entry-text,
+.publications-year-toc .publication-entry-text .hidden {
+  text-align: left;
+}
+
+.publications-year-toc {
+  .publication-entry-text {
+    .title {
+      color: var(--global-text-color);
+      font-size: 1rem !important;
+      font-weight: 500 !important;
+    }
+
+    .author,
+    .periodical,
+    .hidden {
+      font-size: 0.875rem;
+      font-weight: 400;
+    }
+
+    .author a {
+      color: var(--global-text-color);
+
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+
+    .author-highlight {
+      font-weight: 600;
+    }
+
+    .periodical,
+    .periodical em,
+    .periodical .publication-volume {
+      color: var(--global-gray-text-color);
+    }
+
+    .periodical .publication-volume {
+      font-weight: 500;
+    }
+
+    .links a.btn {
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+  }
+
+  .abbr abbr {
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+}
+
+#toc-sidebar.publication-toc a {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+#toc-sidebar.publication-toc .nav-link.active {
+  font-weight: 500;
 }
 
 .selected-publications {
@@ -1361,7 +1488,6 @@ nav[data-toggle="toc"] {
 
   .post-meta {
     color: var(--global-text-color-light);
-    font-size: 0.875rem;
     margin-bottom: 0;
     padding-top: 0.5rem;
   }
@@ -1455,6 +1581,11 @@ ninja-keys::part(ninja-input-wrapper) {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px;
   border-radius: 6px;
   padding: 8px 12px;
+}
+
+.bibsearch-form-input {
+  font-size: 0.875rem;
+  font-weight: 400;
 }
 
 .newsletter-form-input:focus {

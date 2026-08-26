@@ -4,7 +4,7 @@ layout: default
 {% unless site.data.resume %}
   <div class="post cv-page">
     <header class="post-header">
-      <h1 class="post-title">
+      <h1 class="post-title type-page-title">
         {{ page.title }}
         {% if page.cv_pdf %}
           <a
@@ -30,8 +30,8 @@ layout: default
       <div class="cv">
         {% for entry in site.data.cv %}
           <a class="anchor" id="{{ entry.title }}"></a>
-          <div class="card p-3">
-            <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
+          <div class="card p-3 type-body">
+            <h3 class="card-title type-section-title">{{ entry.title }}</h3>
             <div>
               {% if entry.type == 'list' %}
                 {% include cv/list.liquid %}
@@ -55,7 +55,7 @@ layout: default
 {% else %}
   <div class="post cv-page">
     <header class="post-header">
-      <h1 class="post-title">
+      <h1 class="post-title type-page-title">
         {{ page.title }}
         {% if page.cv_pdf %}
           <a
@@ -87,8 +87,8 @@ layout: default
           {% endif %}
           {% if data[0] == 'meta' or data[0] == 'basics' or data[1].size == 0 %} {% continue %} {% endif %}
           <a class="anchor" id="{{ data[0] }}"></a>
-          <div class="card p-3">
-            <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
+          <div class="card p-3 type-body">
+            <h3 class="card-title type-section-title">{{ data[0] | capitalize }}</h3>
             <div>
               {% case data[0] %}
                 {% when 'basics' %}

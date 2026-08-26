@@ -12,19 +12,19 @@
           {% assign date = null %}
         {% endif %}
         {% if date %}
-          <div class="resume-entry-date badge resume-date-badge danger-color-dark text-uppercase">{{ date }}</div>
+          <div class="resume-entry-date badge resume-date-badge danger-color-dark text-uppercase type-meta">{{ date }}</div>
         {% endif %}
-        <h6 class="resume-entry-title education-degree-line">
-          <span class="title">{{ content.studyType }}</span>
+        <h6 class="resume-entry-title education-degree-line type-body">
+          <span class="title type-item-title type-item-title--accent">{{ content.studyType }}</span>
           <span>in {{ content.area }}</span>
         </h6>
         {% if content.location %}
-          <p class="location resume-entry-left-detail">
+          <p class="location resume-entry-left-detail type-meta">
             <i class="fa-solid fa-location-dot iconlocation"></i>
             {{ content.location }}
           </p>
         {% endif %}
-        <h6 class="resume-entry-detail" style="font-size: 0.95rem">
+        <h6 class="resume-entry-detail type-body">
           <a href="{{ content.url }}">{{ content.institution }}</a>
         </h6>
         {% if content.courses and content.courses.size > 0 %}
