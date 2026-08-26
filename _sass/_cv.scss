@@ -43,13 +43,119 @@ a.btncv:hover {
  *****************************/
 
 p.location {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 400;
   white-space: nowrap;
+}
+
+h6.education-degree-line {
+  display: flex;
+  gap: 0.25rem;
+  align-items: baseline;
+}
+
+div.resume-entry-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 10fr);
+  row-gap: 0.4rem;
+  align-items: baseline;
+}
+
+li.resume-entry-item {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+div.resume-entry-date {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: start;
+}
+
+h6.resume-entry-title {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+p.resume-entry-left-detail {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  width: 106px;
+  margin: 0;
+  text-align: center;
+}
+
+h6.resume-entry-detail {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+h6.resume-entry-summary,
+ul.resume-entry-extra {
+  grid-column: 2;
+  grid-row: 3;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+@media (max-width: 767px) {
+  div.resume-entry-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  div.resume-entry-date,
+  h6.resume-entry-title,
+  p.resume-entry-left-detail,
+  h6.resume-entry-detail,
+  h6.resume-entry-summary,
+  ul.resume-entry-extra {
+    grid-column: 1;
+    justify-self: start;
+    padding-left: 0;
+  }
+
+  div.resume-entry-date {
+    grid-row: 1;
+  }
+
+  h6.resume-entry-title {
+    grid-row: 2;
+  }
+
+  h6.resume-entry-detail {
+    grid-row: 3;
+  }
+
+  h6.resume-entry-summary,
+  ul.resume-entry-extra {
+    grid-row: 4;
+  }
+
+  .resume-entry-grid--education p.resume-entry-left-detail {
+    grid-row: 2;
+  }
+
+  .resume-entry-grid--education h6.resume-entry-title {
+    grid-row: 3;
+  }
+
+  .resume-entry-grid--education h6.resume-entry-detail {
+    grid-row: 4;
+  }
+
+  .resume-entry-grid--education ul.resume-entry-extra {
+    grid-row: 5;
+  }
 }
 
 i.iconlocation {
   color: var(--global-theme-color);
-  font-size: 0.8rem;
+  font-size: 10px;
 }
 
 i.iconinstitution {
@@ -101,6 +207,7 @@ div.container-pdf {
 div.list-groups {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 1rem;
   justify-content: flex-start;
   flex-direction: row;
   align-content: center;
@@ -111,11 +218,13 @@ div.list-group {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 td.list-group-category {
   color: var(--global-theme-color);
+  font-size: 1rem;
+  font-weight: 500;
   margin-bottom: 0.5rem;
 }
 
@@ -127,7 +236,12 @@ td.list-group-category-icon {
 }
 
 td.list-group-name {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+td.list-group-name b {
+  font-weight: 400;
 }
 
 td.list-group-level {
@@ -148,6 +262,94 @@ p.list-group-time {
 
 td.list-group-link {
   padding-left: 0.5rem;
+}
+
+table.language-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+
+  th,
+  td {
+    border-left: 1px solid var(--global-divider-color);
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-wrap: anywhere;
+    text-align: left;
+  }
+
+  th:first-child,
+  td:first-child {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  th:last-child,
+  td:last-child {
+    padding-right: 0;
+  }
+
+  th {
+    padding-top: 0;
+    padding-bottom: 0.4rem;
+    color: var(--global-theme-color);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  td {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+}
+
+div.skill-groups {
+  width: 100%;
+}
+
+div.skill-group {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+div.skill-group:last-child {
+  margin-bottom: 0;
+}
+
+div.skill-group-category {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  margin-bottom: 0.4rem;
+  color: var(--global-theme-color);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+div.skill-group-category span {
+  color: inherit;
+}
+
+ul.skill-group-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.skill-group-items li {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+@media (max-width: 575px) {
+  ul.skill-group-items {
+    width: calc(100vw - 5rem);
+  }
 }
 
 /*****************************

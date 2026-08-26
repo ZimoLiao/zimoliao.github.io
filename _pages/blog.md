@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: page
 permalink: /blog/
 title: Blog
 nav: true
-nav_order: 1
+nav_order: 4
 pagination:
   enabled: true
   collection: posts
@@ -16,44 +16,23 @@ pagination:
     after: 3 # The number of links after the current page
 ---
 
-<div class="post">
-
-{% assign blog_name_size = site.blog_name | size %}
-{% assign blog_description_size = site.blog_description | size %}
-
-{% if blog_name_size > 0 or blog_description_size > 0 %}
-
-  <div class="header-bar">
-    <h1>{{ site.blog_name }}</h1>
-    <h2>{{ site.blog_description }}</h2>
-  </div>
-  {% endif %}
-
 {% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
 
-  <div class="tag-category-list">
+  <nav class="tag-category-list" aria-label="Blog topics">
+    <span class="tag-category-list__label">Browse:</span>
     <ul class="p-0 m-0">
       {% for tag in site.display_tags %}
         <li>
-          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
+          <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag | replace: '-', ' ' }}</a>
         </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
       {% endfor %}
-      {% if site.display_categories.size > 0 and site.display_tags.size > 0 %}
-        <p>&bull;</p>
-      {% endif %}
       {% for category in site.display_categories %}
         <li>
-          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
+          <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category | replace: '-', ' ' }}</a>
         </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
       {% endfor %}
     </ul>
-  </div>
+  </nav>
   {% endif %}
 
 {% assign featured_posts = site.posts | where: "featured", "true" %}
@@ -192,5 +171,3 @@ pagination:
 {% if page.pagination.enabled %}
 {% include pagination.liquid %}
 {% endif %}
-
-</div>

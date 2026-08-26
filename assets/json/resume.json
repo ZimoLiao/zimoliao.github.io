@@ -24,7 +24,7 @@
     {
       "institution": "Nanjing University of Aeronautics and Astronautics",
       "location": "Nanjing, China",
-      "url": "https://www.nuaa.edu.cn/",
+      "url": "https://en.nuaa.edu.cn/",
       "area": "Aerospace Engineering",
       "studyType": "B.Eng.",
       "startDate": "2017-09-01",
@@ -46,19 +46,18 @@
     {
       "title": "National Xu Zhilun Outstanding Students Award",
       "date": "2020",
-      "awarder": "Chinese Society of Theoretical and Applied Mechanics (CSTAM)"
+      "awarder": "Chinese Society of Theoretical and Applied Mechanics"
     },
     {
       "title": "National Zhou Peiyuan Mechanics Competition - Grand Prize (1st Place)",
       "date": "2019",
-      "awarder": "Chinese Society of Theoretical and Applied Mechanics (CSTAM)"
+      "awarder": "Chinese Society of Theoretical and Applied Mechanics"
     }
   ],
   "certificates": [],
   "skills": [
     {
       "name": "Programming",
-      "icon": "fa-solid fa-code",
       "keywords": ["C/C++", "Fortran", "CUDA C/Fortran", "MPI", "MATLAB", "Python"]
     }
   ],
@@ -77,18 +76,15 @@
   "interests": [
     {
       "name": "Turbulence and Multiphase Flows",
-      "icon": "fa-solid fa-tag",
-      "keywords": ["Particle-Laden Turbulence", "Wall-Bounded Flows", "Statistical Theory of Turbulence"]
+      "keywords": ["Particle-laden turbulence", "Wall-bounded flows", "Statistical theory of turbulence"]
     },
     {
       "name": "Computational Fluid Dynamics",
-      "icon": "fa-solid fa-tag",
-      "keywords": ["Direct Numerical Simulation", "High-Performance Computing", "GPU Computing"]
+      "keywords": ["Direct numerical simulation", "High-performance computing", "GPU computing"]
     },
     {
       "name": "Artificial Intelligence",
-      "icon": "fa-solid fa-tag",
-      "keywords": ["AI for Science", "Digital Humans", "Agent Systems"]
+      "keywords": ["AI for science", "Digital humans", "Agent systems"]
     }
   ],
   "references": [],

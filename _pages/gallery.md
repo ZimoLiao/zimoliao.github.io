@@ -2,6 +2,8 @@
 layout: page
 permalink: /gallery/
 title: Gallery
+description: All simulations and visualizations are my own work. Please email me to request permission before reuse.
+description_html: All simulations and visualizations are my own work. Please <a href="mailto:zimoliao@mail.ustc.edu.cn">email me</a> to request permission before reuse.
 nav: true
 nav_order: 3
 _styles: |
@@ -35,8 +37,8 @@ _styles: |
 
   .gallery-caption {
     margin-top: 0.75rem;
-    color: var(--global-text-color-light);
-    font-family: Georgia, "Times New Roman", serif;
+    color: var(--global-caption-color);
+    font-family: inherit;
     font-size: 0.92rem;
     line-height: 1.55;
     letter-spacing: 0;

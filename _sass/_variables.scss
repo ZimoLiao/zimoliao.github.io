@@ -43,6 +43,19 @@ $fa-font-path: "../webfonts";
 // Tabler icons location
 $ti-font-path: "../fonts";
 
+// Typography
+$site-font-family-sans:
+  "Roboto",
+  "Noto Sans SC",
+  "Noto Sans CJK SC",
+  "PingFang SC",
+  "Microsoft YaHei",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Arial,
+  sans-serif;
+
 // Back To Top button config
 $back-to-top-z-index: 10;
 $back-to-top-bottom: 30px;
