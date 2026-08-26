@@ -32,6 +32,8 @@ body.sticky-bottom-footer {
 }
 
 body.home-background {
+  --about-white-rgb: 255, 255, 255;
+
   background-color: transparent;
 }
 
@@ -57,7 +59,7 @@ body.home-background {
     position: absolute;
     inset: 0;
     content: "";
-    background: rgba(255, 255, 255, 0.16);
+    background: rgba(var(--about-white-rgb), 0.16);
   }
 }
 
@@ -78,8 +80,8 @@ body.home-background {
 
 .about-glass {
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.78);
-  border: 1px solid rgba(255, 255, 255, 0.82);
+  background: rgba(var(--about-white-rgb), 0.78);
+  border: 1px solid rgba(var(--about-white-rgb), 0.82);
   border-radius: 6px;
   box-shadow: 0 14px 34px rgba(27, 42, 56, 0.13);
   backdrop-filter: blur(18px) saturate(0.9);
@@ -101,7 +103,7 @@ html[data-theme="dark"] {
 
   .about-glass {
     background: rgba(28, 31, 36, 0.8);
-    border-color: rgba(255, 255, 255, 0.14);
+    border-color: rgba(var(--about-white-rgb), 0.14);
     box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
   }
 }

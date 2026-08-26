@@ -27,7 +27,6 @@
 
   function buildRepoCardHtml(repo) {
     const title = escapeHtml(repo.name || repo.full_name || "repository");
-    const fullName = escapeHtml(repo.full_name || title);
     const description = escapeHtml(repo.description || "Open-source work on GitHub.");
     const language = escapeHtml(repo.language || "Unknown");
     const stars = formatCompactCount(repo.stargazers_count);
@@ -36,7 +35,6 @@
     const repoUrl = escapeHtml(repo.html_url || "#");
 
     return `
-      <div class="featured-repo-card__eyebrow">${fullName}</div>
       <div class="featured-repo-card__title-row">
         <h3 class="featured-repo-card__title">
           <a class="featured-repo-card__title-link" href="${repoUrl}" target="_blank" rel="noopener noreferrer">${title}</a>
