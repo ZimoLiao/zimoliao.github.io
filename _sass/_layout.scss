@@ -130,8 +130,8 @@ html[data-theme="dark"] {
 }
 
 @media (max-width: 575.98px) {
-  .about-home .post-title {
-    font-size: 2.125rem;
+  .about-home .post-title.type-page-title {
+    font-size: 2.125rem !important;
   }
 }
 

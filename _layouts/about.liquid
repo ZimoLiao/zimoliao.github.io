@@ -22,15 +22,15 @@ layout: default
 <div class="post about-home">
   <div class="about-glass">
   <header class="post-header">
-    <h1 class="post-title">
+    <h1 class="post-title type-page-title">
       {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }} | {{ site.chinese_name }}
+        <span class="font-weight-bold about-name-emphasis">{{ site.first_name }}</span> {{ site.middle_name }}
+        {{ site.last_name }}<span class="about-name-divider" aria-hidden="true"></span>{{ site.chinese_name }}
       {% else %}
         {{ site.title }}
       {% endif %}
     </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+    <p class="desc type-body about-quote">{{ page.subtitle }}</p>
   </header>
 
   <article>
@@ -39,10 +39,9 @@ layout: default
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% assign profile_image_class = 'img-fluid rounded-circle about-profile-image' %}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {% assign profile_image_class = 'img-fluid rounded about-profile-image' %}
           {% endif %}
           {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}
@@ -62,7 +61,7 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+    <div class="clearfix type-body">{{ content }}</div>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
@@ -76,7 +75,7 @@ layout: default
       {% endfor %}
       {% if recent_news_count > 0 %}
         <div class="about-section">
-          <h2>
+          <h2 class="type-section-title">
             <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
           </h2>
           {% include news.liquid limit=true %}
@@ -87,7 +86,7 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <div class="about-section">
-        <h2>
+        <h2 class="type-section-title">
           <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
         </h2>
         {% include selected_papers.liquid %}
@@ -96,7 +95,7 @@ layout: default
 
     {% if page.featured_repo %}
       <div class="about-section">
-        <h2>Featured Repositories</h2>
+        <h2 class="type-section-title">Featured Repositories</h2>
         {% include repository/featured_repo.liquid repository=page.featured_repo %}
       </div>
     {% endif %}
@@ -113,7 +112,7 @@ layout: default
       {% endfor %}
       {% if recent_posts_count > 0 %}
         <div class="about-section">
-          <h2>
+          <h2 class="type-section-title">
             <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
           </h2>
           {% include latest_posts.liquid limit=true %}

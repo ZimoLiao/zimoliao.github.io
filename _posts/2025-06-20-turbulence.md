@@ -49,12 +49,12 @@ Turbulence (turbulent flows), usually referred to as the most important unsolved
 
 Yet, formidable challenges accompany the beauty of turbulent flows: nonlinearity, multi-scale nature, and irregularity, just to name a few. As said by Guy Beart,
 
-> Turbulence toiler, on the rack,
+> Turbulence toiler, on the rack,<br>
 > For each step forward, two steps back!
 
 To this day, we still don't fully understand where turbulence comes from (the transition between laminar and turbulent states) and where it goes (toward some ultimate scaling?).
 Scientists have been working hard on this problem for decades, flaring sparks on the boundless ocean to guide later generations. And now, it's our turn to continue this voyage.
 
-#### Reference
+## References
 
-> Davidson, P. A., Kaneda, Y., Moffatt, K., & Sreenivasan, K. R. (Eds.). (2011). A Voyage Through Turbulence. Cambridge: Cambridge University Press.
+Davidson, P. A., Kaneda, Y., Moffatt, K., & Sreenivasan, K. R. (Eds.). (2011). <cite>A Voyage Through Turbulence</cite>. Cambridge University Press.

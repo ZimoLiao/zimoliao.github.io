@@ -172,10 +172,10 @@ namely, this term merely represents a _transfer_ of energy between modes.
 
 ## References
 
-Batchelor, G. K. (1953). The Theory of Homogeneous Turbulence, Cambridge University Press.
+Batchelor, G. K. (1953). <cite>The Theory of Homogeneous Turbulence</cite>, Cambridge University Press.
 
-McComb, W. D. (1990). The Physics of Fluid Turbulence, Clarendon Press.
+McComb, W. D. (1990). <cite>The Physics of Fluid Turbulence</cite>, Clarendon Press.
 
-Frisch, U. (1995). Turbulence: The Legacy of A. N. Kolmogorov, Cambridge University Press.
+Frisch, U. (1995). <cite>Turbulence: The Legacy of A. N. Kolmogorov</cite>, Cambridge University Press.
 
-Pope, S. B. (2000). Turbulent Flows, Cambridge University Press.
+Pope, S. B. (2000). <cite>Turbulent Flows</cite>, Cambridge University Press.

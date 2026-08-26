@@ -200,7 +200,13 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% if page.toc_class == 'publication-toc' and entry.type == 'article' %}
+    {% assign use_full_periodical = false %}
+    {% if entry.type == 'article' %}
+      {% if page.toc_class == 'publication-toc' or page.layout == 'about' %}
+        {% assign use_full_periodical = true %}
+      {% endif %}
+    {% endif %}
+    {% if use_full_periodical %}
       {% assign publication_locator = entry.pages | default: entry.eid %}
       {% capture periodical %}<em>{{ entry.journal }}</em>{% if entry.volume %} <span class="publication-volume">{{ entry.volume }}</span>{% endif %}{% if publication_locator %}, {{ publication_locator }}{% endif %}{% if entry.year %} ({{ entry.year }}){% endif %}{% endcapture %}
     {% else %}

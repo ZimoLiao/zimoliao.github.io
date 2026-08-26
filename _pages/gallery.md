@@ -38,7 +38,7 @@ _styles: |
 
   .gallery-caption {
     margin-top: 0.75rem;
-    color: var(--global-gray-text-color);
+    color: var(--global-gray-text-color) !important;
     font-family: inherit;
     line-height: 1.55;
     letter-spacing: 0;
