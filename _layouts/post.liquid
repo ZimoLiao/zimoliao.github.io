@@ -17,9 +17,15 @@ layout: default
     <h1 class="post-title type-page-title">{{ page.title }}</h1>
     <p class="post-meta blog-post-meta type-body">
       <span class="blog-post-meta__item">{{ page.date | date: '%B %d, %Y' }}</span>
-      {% if page.author %}<span class="blog-post-meta__item">{{ page.author }}</span>{% endif %}
-      {% if page.last_updated %}<span class="blog-post-meta__item">Updated {{ page.last_updated | date: '%B %d, %Y' }}</span>{% endif %}
-      {% if page.meta %}<span class="blog-post-meta__item">{{ page.meta }}</span>{% endif %}
+      {% if page.author -%}
+        <span class="blog-post-meta__item">{{ page.author }}</span>
+      {%- endif %}
+      {% if page.last_updated -%}
+        <span class="blog-post-meta__item">Updated {{ page.last_updated | date: '%B %d, %Y' }}</span>
+      {%- endif %}
+      {% if page.meta -%}
+        <span class="blog-post-meta__item">{{ page.meta }}</span>
+      {%- endif %}
       {% if tags != '' %}
         {% for tag in page.tags %}
           <span class="blog-post-meta__item">
