@@ -116,13 +116,7 @@ _styles: |
 <section class="gallery-section" aria-labelledby="gallery-2d-hit">
   <h2 id="gallery-2d-hit" class="gallery-section-title type-section-title">Two-dimensional homogeneous isotropic turbulence (HIT)</h2>
   <p class="gallery-section-description type-body">
-    Vorticity evolution in a doubly periodic square domain. All quantities are nondimensional, with scales chosen so that the domain side length is
-    <span class="math">\(2\pi\)</span> and the mean enstrophy injection rate in the forced case is
-    <span class="math">\(\eta_I = 1\)</span>; the decaying case uses the same scales.
-    Both simulations solve the two-dimensional incompressible Navier-Stokes
-    equations in vorticity-streamfunction form using a Fourier pseudospectral method with
-    <span class="math">\(1024^2\)</span> collocation points and the <span class="math">\(3/2\)</span> rule for dealiasing.
-    The deterministic evolution is advanced using a third-order integrating-factor Runge-Kutta scheme.
+    Vorticity evolution in a doubly periodic square domain, simulated on a <span class="math">\(1024^2\)</span> grid.
   </p>
   <div class="gallery-grid gallery-grid--paired">
     <figure class="gallery-item">
@@ -132,9 +126,8 @@ _styles: |
         </video>
       </div>
       <figcaption class="gallery-caption type-body">
-        <span class="gallery-caption-label">Decaying HIT.</span> Free decay from an initial condition obtained from forced HIT,
-        with kinematic viscosity <span class="math">\(\nu = 4 \times 10^{-5}\)</span>
-        and neither forcing nor linear friction. You can see similar swirling patterns when you stir your morning coffee!
+        <span class="gallery-caption-label">Decaying HIT.</span> Freely decaying turbulence after the forcing is switched off.
+        You can see similar swirling patterns when you stir your morning coffee!
       </figcaption>
     </figure>
 
@@ -145,10 +138,7 @@ _styles: |
         </video>
       </div>
       <figcaption class="gallery-caption type-body">
-        <span class="gallery-caption-label">Forced HIT.</span> Vorticity evolution with kinematic viscosity
-        <span class="math">\(\nu = 4 \times 10^{-5}\)</span>, linear friction coefficient
-        <span class="math">\(\alpha = 0.03\)</span>, and stochastic vorticity forcing that is white in time
-        and restricted to the wavenumber band <span class="math">\(19 \le |\boldsymbol{k}| \le 21\)</span>.
+        <span class="gallery-caption-label">Forced HIT.</span> Turbulence sustained by continuous energy input from random forcing.
       </figcaption>
     </figure>
 
