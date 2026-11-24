@@ -198,6 +198,7 @@ _styles: |
         <span class="gallery-caption-label">Full domain, particles only.</span>
       </figcaption>
     </figure>
+
   </div>
 </section>
 
