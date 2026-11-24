@@ -94,7 +94,9 @@ _styles: |
   }
 
   .gallery-caption a em,
-  .gallery-caption a strong {
+  .gallery-caption a strong,
+  .gallery-section-description a em,
+  .gallery-section-description a strong {
     color: inherit;
   }
 
@@ -142,6 +144,60 @@ _styles: |
       </figcaption>
     </figure>
 
+  </div>
+</section>
+
+<section class="gallery-section" aria-labelledby="gallery-cohesive-clusters">
+  <h2 id="gallery-cohesive-clusters" class="gallery-section-title type-section-title">Cohesive particle clusters in HIT</h2>
+  <p class="gallery-section-description type-body">
+    Breakup of cohesive particle clusters in homogeneous isotropic turbulence, reproducing the simulation in
+    <a href="https://doi.org/10.1017/jfm.2020.1020"><em>J. Fluid Mech.</em> <strong>911</strong>, A10 (2021)</a>.
+    The same simulation is shown at two scales, with and without volume renderings of vorticity magnitude.
+  </p>
+  <div class="gallery-grid gallery-grid--paired">
+    <figure class="gallery-item">
+      <div class="gallery-media gallery-media--square">
+        <video controls autoplay muted loop playsinline preload="metadata">
+          <source src="{{ '/assets/video/gallery/hit-cohesive-cluster-breakup-2mm.mp4' | relative_url }}" type="video/mp4">
+        </video>
+      </div>
+      <figcaption class="gallery-caption type-body">
+        <span class="gallery-caption-label">Close-up with vorticity.</span>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+      <div class="gallery-media gallery-media--square">
+        <video controls autoplay muted loop playsinline preload="metadata">
+          <source src="{{ '/assets/video/gallery/hit-cohesive-cluster-breakup-8mm.mp4' | relative_url }}" type="video/mp4">
+        </video>
+      </div>
+      <figcaption class="gallery-caption type-body">
+        <span class="gallery-caption-label">Full domain with vorticity.</span>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+      <div class="gallery-media gallery-media--square">
+        <video controls autoplay muted loop playsinline preload="metadata">
+          <source src="{{ '/assets/video/gallery/hit-cohesive-cluster-particles-only-2mm.mp4' | relative_url }}" type="video/mp4">
+        </video>
+      </div>
+      <figcaption class="gallery-caption type-body">
+        <span class="gallery-caption-label">Close-up, particles only.</span>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+      <div class="gallery-media gallery-media--square">
+        <video controls autoplay muted loop playsinline preload="metadata">
+          <source src="{{ '/assets/video/gallery/hit-cohesive-cluster-particles-only-8mm.mp4' | relative_url }}" type="video/mp4">
+        </video>
+      </div>
+      <figcaption class="gallery-caption type-body">
+        <span class="gallery-caption-label">Full domain, particles only.</span>
+      </figcaption>
+    </figure>
   </div>
 </section>
 
